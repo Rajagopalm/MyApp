@@ -1,0 +1,5330 @@
+[
+  {
+    "Id": 1,
+    "Name": "A.A. Arts and Science College (Women)",
+    "Address": "Koyambedu",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 2,
+    "Name": "A.A. Govt. Arts College for Men",
+    "Address": "Namakkal",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 3,
+    "Name": "A.A. Govt. Arts College",
+    "Address": "Attur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 4,
+    "Name": "A.D.M. College for Women",
+    "Address": "Nagapatinam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 5,
+    "Name": "A.E.T. College",
+    "Address": "Attur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 6,
+    "Name": "A.J.K. College of Arts and Science",
+    "Address": "Navakkarai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 7,
+    "Name": "Arulmigu Kalasalingam College (A.K.C) Of Arts And Science",
+    "Address": "Krishnankoil",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 8,
+    "Name": "A.K.D. Dharmaraja Women College",
+    "Address": "Rajapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 9,
+    "Name": "A.M. Jain College (Men)",
+    "Address": "Meenambakkam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 10,
+    "Name": "Ayya Nadar Janaki Ammal (A.N.J.A) College (Autonomous)",
+    "Address": "Sivakasi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 11,
+    "Name": "A.P.A. College of Arts and Culture",
+    "Address": "Palani",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 12,
+    "Name": "A.P.C. Mahalakshmi College for Women",
+    "Address": "Sankaraperi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 13,
+    "Name": "A.R.C. Viswanathan College",
+    "Address": "Mayiladuthurai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 14,
+    "Name": "A.V.C. College (Autonomous)",
+    "Address": "Mayiladuthurai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 15,
+    "Name": "A.V.S. College of Arts and Science",
+    "Address": "Ramalingapuram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 16,
+    "Name": "A.V.V.M. Sri Pushpam College (Autonomous)",
+    "Address": "Poondi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 17,
+    "Name": "Abi and Abi College",
+    "Address": "Narasanayagipuram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 18,
+    "Name": "Adaikala Matha College",
+    "Address": "Vallam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 19,
+    "Name": "Adharsh Vidyalaya College of Arts and Science for Women",
+    "Address": "Bhavani Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 20,
+    "Name": "Adhiparasakthi College of Science",
+    "Address": "Kalavai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 21,
+    "Name": "Aditanar College of Arts and Science",
+    "Address": "Tiruchendur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 22,
+    "Name": "Aiman College of Arts and Science for Women",
+    "Address": "Sathanur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 23,
+    "Name": "Alagappa Govt. Arts College",
+    "Address": "Karaikudi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 24,
+    "Name": "Alamelu Angappan College for Women",
+    "Address": "Komarapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 25,
+    "Name": "Alpha Arts and Science College",
+    "Address": "Porur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 26,
+    "Name": "Ambai Arts College",
+    "Address": "Ambasamudram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 27,
+    "Name": "Ambiga College of Arts and Science",
+    "Address": "Sathamangalam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 28,
+    "Name": "Ananda College",
+    "Address": "Devakottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 29,
+    "Name": "Anbu Arts and Science College",
+    "Address": "Komarapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 30,
+    "Name": "Angappa College of Arts and Science",
+    "Address": "Race Course",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 31,
+    "Name": "Anna Adarsh College for Women",
+    "Address": "Anna Nagar",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 32,
+    "Name": "Annai College of Arts and Science",
+    "Address": "Kumbakonam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 33,
+    "Name": "Annai Fathima College of Arts and Science",
+    "Address": "Tirumangalam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 34,
+    "Name": "Annai Hajira Women College",
+    "Address": "Melapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 35,
+    "Name": "Annai Theresa College of Arts and Science",
+    "Address": "Thirukazhukundram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 36,
+    "Name": "Annai Veilankanni College",
+    "Address": "Azhagappapuram Post",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 37,
+    "Name": "Annai Veilankanni College of Arts and Science",
+    "Address": "Saidapet",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 38,
+    "Name": "Annai Violet Arts and Science College",
+    "Address": "Ambattur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 39,
+    "Name": "Annai Women College",
+    "Address": "Punnamchatram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 40,
+    "Name": "Apollo Arts and Science College",
+    "Address": "Poonamallee",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 41,
+    "Name": "Arakkonam Arts and Science College",
+    "Address": "Arakkonam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 42,
+    "Name": "Arcot Sri Mahalakshmi Women College",
+    "Address": "Arcot",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 43,
+    "Name": "Aries Arts and Science College for Women",
+    "Address": "Vadalur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 44,
+    "Name": "Arignar Anna College (Arts and Science)",
+    "Address": "Krishnagiri",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 45,
+    "Name": "Arignar Anna College",
+    "Address": "Aralvaimozhi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 46,
+    "Name": "Arignar Anna Govt. Arts College for Women",
+    "Address": "Walajapet",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 47,
+    "Name": "Arignar Anna Govt. Arts College",
+    "Address": "Cheyyar",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 48,
+    "Name": "Arignar Anna Govt. Arts College",
+    "Address": "Musiri",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 49,
+    "Name": "Arignar Anna Govt. Arts College",
+    "Address": "Keezperum Pakkam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 50,
+    "Name": "Arputha College of Arts and Science",
+    "Address": "Vamban",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 51,
+    "Name": "Arul Anandar College (Autonomous)",
+    "Address": "Karumathur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 52,
+    "Name": "Arulmigu Panruti Ayyan Arts and Science College",
+    "Address": "Nanguneri",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 53,
+    "Name": "Arumugam Pillai Seethai Ammal College",
+    "Address": "Tirupattur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 54,
+    "Name": "Arun Krishna College of Arts and Science",
+    "Address": "Chengam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 55,
+    "Name": "Aruna Vidhya Arts and Science College",
+    "Address": "Chengam Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 56,
+    "Name": "Arungarai Amman College of Arts and Science",
+    "Address": "Chinna Dharapuram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 57,
+    "Name": "Asan Memorial College of Arts and Science",
+    "Address": "Medavakkam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 58,
+    "Name": "Attur Arts and Science College",
+    "Address": "Attur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 59,
+    "Name": "Auxilium College of Arts and Science for Women",
+    "Address": "Alangudi Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 60,
+    "Name": "Auxilium College",
+    "Address": "Katpadi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 61,
+    "Name": "Avinashilingam University for Women",
+    "Address": "Saibaba Colony",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 62,
+    "Name": "Ayyan Thiruvalluvar College of Arts and Science",
+    "Address": "Puliampatti",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 63,
+    "Name": "B. Padmanabhan Jayanthimala (B.P.J) College Of Arts and Science",
+    "Address": "Srimushnam",
+    "PinCode": 608703,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 64,
+    "Name": "Sri Vidya College of Engineering and Technology",
+    "Address": "Sivakasi Main Road",
+    "PinCode": 626005,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 518
+  },
+  {
+    "Id": 65,
+    "Name": "Best Arts and Science College",
+    "Address": "Sirkali Taluk",
+    "PinCode": 609111,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 66,
+    "Name": "Bhaktavatsalam Memorial College for Women",
+    "Address": "Korattur",
+    "PinCode": 600080,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 67,
+    "Name": "Bharath College of Science and Management",
+    "Address": "Trichy Road",
+    "PinCode": 613005,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 68,
+    "Name": "Bharathi Arts and Science College",
+    "Address": "Kallakurichi",
+    "PinCode": 606202,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 69,
+    "Name": "Bharathi Women College (Autonomous)",
+    "Address": "George Town",
+    "PinCode": 600108,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 70,
+    "Name": "Bharathidasan College of Arts and Science",
+    "Address": "Pallapalayam PO",
+    "PinCode": 638116,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 71,
+    "Name": "Bharathiyar Arts and Science College for Women",
+    "Address": "Thalaivasal",
+    "PinCode": 636112,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 72,
+    "Name": "Bishop Ambrose College",
+    "Address": "Ramanathapuram",
+    "PinCode": 641045,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 73,
+    "Name": "Bishop Calldowell College",
+    "Address": "Maravanmadam",
+    "PinCode": 628101,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 74,
+    "Name": "Bishop Heber College",
+    "Address": "Puthur",
+    "PinCode": 620017,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 75,
+    "Name": "Bishop Thorp College",
+    "Address": "Dharapuram",
+    "PinCode": 638657,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 76,
+    "Name": "Bon Secours College for Women",
+    "Address": "Vilar",
+    "PinCode": 613006,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 77,
+    "Name": "C. Abdul Hakkim College",
+    "Address": "Melvisharam",
+    "PinCode": 632509,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 78,
+    "Name": "C. Kandasami Naidu College for Men",
+    "Address": "Annanagar",
+    "PinCode": 600102,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 79,
+    "Name": "C. Kandasamy Naidu College for Women",
+    "Address": "Semmandalam",
+    "PinCode": 607001,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 80,
+    "Name": "C.B.M. College Sakethapuri",
+    "Address": "Kovai Pudur",
+    "PinCode": 641042,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 81,
+    "Name": "C.M.S. College of Science and Commerce",
+    "Address": "Saravanampatty",
+    "PinCode": 641049,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 82,
+    "Name": "C.P.A. College",
+    "Address": "Bodinayakanur",
+    "PinCode": 625582,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 83,
+    "Name": "C.S.I. Bishop Appasamy College of Arts and Science",
+    "Address": "Race Course",
+    "PinCode": 641018,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 84,
+    "Name": "C.S.I. Darling Selvabai Thavaraj David College of Arts and Science for Women",
+    "Address": "K.Pudur",
+    "PinCode": 625007,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 85,
+    "Name": "C.S.I. Edward Women Christian College",
+    "Address": "Melrosapuram",
+    "PinCode": 603204,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 86,
+    "Name": "C.S.I. Jeyaraj Annapackiam College",
+    "Address": "Nallur",
+    "PinCode": 627853,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 87,
+    "Name": "C.T.M. College of Arts and Science",
+    "Address": "Thiruvallur",
+    "PinCode": 602107,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 88,
+    "Name": "Cambridge College of Arts and Science",
+    "Address": "Vettamangalam",
+    "PinCode": 639117,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 89,
+    "Name": "Caussanel College of Arts and Science",
+    "Address": "Muthupettai",
+    "PinCode": 623523,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 90,
+    "Name": "Cauveri College for Women",
+    "Address": "Woraiyur",
+    "PinCode": 620018,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 91,
+    "Name": "Chellammal Women College of the Pachaiyappa Trust",
+    "Address": "Guindy",
+    "PinCode": 600032,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 92,
+    "Name": "Chennai National College (Arts and Science)",
+    "Address": "Avadi",
+    "PinCode": 600054,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 93,
+    "Name": "Cheran Arts Science College",
+    "Address": "Kangayam",
+    "PinCode": 638701,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 94,
+    "Name": "Cheran College For Women",
+    "Address": "Tirupur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 95,
+    "Name": "Chettinad College of Arts and Science",
+    "Address": "Karumandapam",
+    "PinCode": 620009,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 96,
+    "Name": "Chevaliar T. Thomas Elizabeth College for Women",
+    "Address": "Perambur",
+    "PinCode": 600011,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 97,
+    "Name": "Chidambaram Pillai College of Women",
+    "Address": "Mannachanallur",
+    "PinCode": 621005,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 98,
+    "Name": "Chikkaiah Naiacker College",
+    "Address": "Veerappanchatram",
+    "PinCode": 638004,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 99,
+    "Name": "Chikkanna Government Arts College",
+    "Address": "Gopalapuram",
+    "PinCode": 641018,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 100,
+    "Name": "Christhu Raj College",
+    "Address": "Panjappur",
+    "PinCode": 620012,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 101,
+    "Name": "D.G. Govt. Arts College for Women",
+    "Address": "Mayiladuthurai",
+    "PinCode": 609001,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 102,
+    "Name": "Danapackiyam Krishnasamy Mudaliar College for Women",
+    "Address": "Sainathapuram",
+    "PinCode": 632001,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 103,
+    "Name": "Devanga Arts College",
+    "Address": "Aruppukottai",
+    "PinCode": 626101,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 104,
+    "Name": "Dhanalakshmi Srinivasan College of Arts and Science for Women",
+    "Address": "Thuraiyur Road",
+    "PinCode": 621212,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 105,
+    "Name": "Dhanraj Baid (DB) Jain College (Autonomous)",
+    "Address": "Thoraipakkam",
+    "PinCode": 600097,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 106,
+    "Name": "Dharmambal Ramasamy Arts and Science College",
+    "Address": "Orathanadu",
+    "PinCode": 614625,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 107,
+    "Name": "Dharmamurthi Rao Bahadur Calavala Cunnan Chetty Hindu (D.R.B.C.C.C.H.) College",
+    "Address": "Pattabiram",
+    "PinCode": 600072,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 108,
+    "Name": "Dharmapuram Adinam Arts College",
+    "Address": "Mayiladuthurai",
+    "PinCode": 609001,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 109,
+    "Name": "Don Bosco College",
+    "Address": "Sogathur Post",
+    "PinCode": 636809,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 110,
+    "Name": "Dr. Ambedkar Government Arts College",
+    "Address": "Vyasarpadi",
+    "PinCode": 600039,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 111,
+    "Name": "Dr. G.R. Damodaran (GRD) College of Science",
+    "Address": "Peelamedu",
+    "PinCode": 641014,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 112,
+    "Name": "Dr. Kalaignar Government Arts College",
+    "Address": "Kulithalai",
+    "PinCode": 639104,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 113,
+    "Name": "Dr. M.G.R. Chockalingam Arts College",
+    "Address": "Arani Taluk",
+    "PinCode": 632317,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 114,
+    "Name": "Dr. M.G.R. Janaki College of Arts and Science for Women",
+    "Address": "Raja Annamalai Puram",
+    "PinCode": 600028,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 115,
+    "Name": "Dr. N.G.P. Arts and Science College",
+    "Address": "Kalapatti Road",
+    "PinCode": 641048,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 116,
+    "Name": "Dr. Nallikuppusamy Arts College",
+    "Address": "Ramapuram Post",
+    "PinCode": 613003,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 117,
+    "Name": "Dr. R.A.N.M. Arts and Science College",
+    "Address": "Rangampalayam",
+    "PinCode": 638009,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 118,
+    "Name": "Dr. R.K. Shanmugam College of Arts and Science",
+    "Address": "Kallakurichi",
+    "PinCode": 606213,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 119,
+    "Name": "Dr. R.V. Arts and Science College",
+    "Address": "Karamadai",
+    "PinCode": 641104,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 120,
+    "Name": "Dr. S.N.S. Rajalakshmi College of Arts and Science",
+    "Address": "Chinnavedampatti",
+    "PinCode": 641049,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 121,
+    "Name": "Dr. Sir A.L. Mudaliar Vocational Arts and Science",
+    "Address": "Vengal",
+    "PinCode": 601103,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 122,
+    "Name": "Dr. Umayal Ramanathan College for Women",
+    "Address": "Karaikudi",
+    "PinCode": 630003,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 123,
+    "Name": "Dr. Zakir Hussain College",
+    "Address": "Ilayangudi",
+    "PinCode": 630702,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 124,
+    "Name": "Dwaraka Doss Goverdhan Doss (DG) Vaishnav College",
+    "Address": "Arumbakkam",
+    "PinCode": 600106,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 125,
+    "Name": "E.M.G. Yadava Women College",
+    "Address": "Thiruppalai",
+    "PinCode": 625014,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 126,
+    "Name": "Edaiyathangudi G.S. Pillai Arts and Science College",
+    "Address": "Nagapattinam",
+    "PinCode": 611001,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 127,
+    "Name": "Emerald Heights College for Women",
+    "Address": "Udhagamandalam",
+    "PinCode": 643006,
+    "ContactNumber": "NULL",
+    "District": "Nilgiris",
+    "DistrictId": 529
+  },
+  {
+    "Id": 128,
+    "Name": "Enathi Rajappa College of Arts and Science",
+    "Address": "Pattukkottai",
+    "PinCode": 614615,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 129,
+    "Name": "Erode Arts and Science College (Autonomous)",
+    "Address": "Rangampalayam",
+    "PinCode": 638009,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 130,
+    "Name": "National Institute for the Visually Handicapped",
+    "Address": "POONAMALLEE",
+    "PinCode": 600056,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 521
+  },
+  {
+    "Id": 131,
+    "Name": "Erode Christian College of Arts and Science for Women",
+    "Address": "Brough Road",
+    "PinCode": 638001,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 132,
+    "Name": "Ethiraj College for Women (Autonomous)",
+    "Address": "Nungambakkam",
+    "PinCode": 600034,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 133,
+    "Name": "Fatima College (Autonomous)",
+    "Address": "Thathaneri",
+    "PinCode": 625001,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 134,
+    "Name": "G.T.N. Arts College",
+    "Address": "N.S.Nagar",
+    "PinCode": 624004,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 135,
+    "Name": "Bharathidasan University Constituent Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "",
+    "District": "",
+    "DistrictId": ""
+  },
+  {
+    "Id": 136,
+    "Name": "Ganapathi Seethai Ammal College",
+    "Address": "Manamadurai",
+    "PinCode": 630609,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 137,
+    "Name": "Ganesar Senthamil College",
+    "Address": "Varpattu",
+    "PinCode": 622403,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 535
+  },
+  {
+    "Id": 138,
+    "Name": "Gem Gates Arts and Science College",
+    "Address": "Attur",
+    "PinCode": 636109,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 139,
+    "Name": "Gobi Arts and Science College (Autonomous)",
+    "Address": "Gobichettipalayam",
+    "PinCode": 638453,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 140,
+    "Name": "Government Arts College for Women, Pudukkottai",
+    "Address": "Sathyamoorthy Road",
+    "PinCode": 622001,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 141,
+    "Name": "Government Arts College, Kumbakonam",
+    "Address": "Kumbakonam",
+    "PinCode": 612001,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 142,
+    "Name": "Government College for Women, Kumbakonam ????????",
+    "Address": "Kumbakonam",
+    "PinCode": 612001,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 143,
+    "Name": "Govindammal Adithanar Women College",
+    "Address": "Tiruchendur",
+    "PinCode": 628215,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 144,
+    "Name": "Govt. Arts and Science College for Women, Dharmapuri",
+    "Address": "Karimangalam",
+    "PinCode": 635111,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 145,
+    "Name": "Govt. Arts College (Autonomous), Coimbatore",
+    "Address": "Gopalapuram",
+    "PinCode": 641018,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 146,
+    "Name": "Govt. Arts College for Men (Autonomous), Nandanam",
+    "Address": "Nandanam",
+    "PinCode": 600035,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 147,
+    "Name": "Govt. Arts College for Men, Krishnagiri",
+    "Address": "Krishnagiri",
+    "PinCode": 635001,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 148,
+    "Name": "Govt. Arts College for Women, Krishnagiri",
+    "Address": "Krishnagiri",
+    "PinCode": 635001,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 149,
+    "Name": "Govt. Arts College for Women, Ramanathapuram",
+    "Address": "Kenikkarai",
+    "PinCode": 623501,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 150,
+    "Name": "Govt. Arts College for Women, Salem",
+    "Address": "Periyakollappatty",
+    "PinCode": 636008,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 151,
+    "Name": "Rani Anna Govt. Arts College for Women",
+    "Address": "Gandhi Nagar",
+    "PinCode": 627008,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 152,
+    "Name": "Govt. Arts College, Ariyalur",
+    "Address": "Ariyalur",
+    "PinCode": 621713,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 153,
+    "Name": "Govt. Arts College, Chidambaram",
+    "Address": "Chidambaram",
+    "PinCode": 608102,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 154,
+    "Name": "Govt. Arts College, Dharmapuri",
+    "Address": "Dharmapuri",
+    "PinCode": 636705,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 155,
+    "Name": "Govt. Arts College, Karur",
+    "Address": "Thanthonimalai",
+    "PinCode": 639007,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 156,
+    "Name": "Govt. Arts College, Melur",
+    "Address": "Melur",
+    "PinCode": 625106,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 157,
+    "Name": "Govt. Arts College, Paramakudi",
+    "Address": "Paramakudi",
+    "PinCode": 623707,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 158,
+    "Name": "Govt. Arts College, Salem",
+    "Address": "Kumarasamipatti",
+    "PinCode": 636007,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 159,
+    "Name": "Govt. Arts College, Thiruvannamalai",
+    "Address": "Thiruvannamalai",
+    "PinCode": 606603,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 160,
+    "Name": "Govt. Arts College, Tiruchirappalli",
+    "Address": "Tiruchirappalli",
+    "PinCode": 620022,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 161,
+    "Name": "Govt. Arts College, Nilgiris",
+    "Address": "Udagamandalam",
+    "PinCode": 643002,
+    "ContactNumber": "NULL",
+    "District": "Nilgiris",
+    "DistrictId": 529
+  },
+  {
+    "Id": 162,
+    "Name": "Govt. Arts College, Udumalpet",
+    "Address": "Udumalpet",
+    "PinCode": 642126,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 163,
+    "Name": "Govt. College for Women, Sivagangai",
+    "Address": "Sivagangai",
+    "PinCode": 630562,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 164,
+    "Name": "Govt. Thirumagal Mills College, Gudiyattam",
+    "Address": "Gudiyattam",
+    "PinCode": 635803,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 165,
+    "Name": "Guru Nanak College",
+    "Address": "Velachery",
+    "PinCode": 600042,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 166,
+    "Name": "Guru Shree Shanti Vijai Jain College for Women",
+    "Address": "Vepery",
+    "PinCode": 600007,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 167,
+    "Name": "H.H. The Rajahs College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 168,
+    "Name": "H.K.R.H. College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 169,
+    "Name": "Harur Muthu Arts and Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 170,
+    "Name": "Hindustan College of Arts and Science",
+    "Address": "Kelambakkam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 171,
+    "Name": "Hindusthan College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 172,
+    "Name": "Holy Cross College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 173,
+    "Name": "Holy Cross College",
+    "Address": "Nagercoil",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 174,
+    "Name": "Holy Cross Home Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 175,
+    "Name": "Idaya College of Arts and Science for Women",
+    "Address": "Pudupalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 176,
+    "Name": "Idhaya College of Arts and Science for Women",
+    "Address": "Kumbakonam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 177,
+    "Name": "Idhaya Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 178,
+    "Name": "Imayam College of Arts and Science",
+    "Address": "Thuraiyur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 179,
+    "Name": "Immaculate College for Women",
+    "Address": "Sankarapuram Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 180,
+    "Name": "Indian Arts and Science College",
+    "Address": "Naidumangalam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 181,
+    "Name": "Indian Harvard Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 182,
+    "Name": "Indira Gandhi Jayanthi Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 183,
+    "Name": "Indo-American College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 184,
+    "Name": "Islamiah College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 185,
+    "Name": "Islamiah Women Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 186,
+    "Name": "J.A. Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 187,
+    "Name": "J.J. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 188,
+    "Name": "J.K.K. Nataraja College of Arts and Science",
+    "Address": "Komarapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 189,
+    "Name": "Jairam Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 190,
+    "Name": "Jamal Mohamed College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 191,
+    "Name": "Jawahar Science College",
+    "Address": "Neyveli",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 192,
+    "Name": "Jaya College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 193,
+    "Name": "Jayagovind Harigopal Agarwal Agarsen College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 194,
+    "Name": "Jayaraj Annapackiam College for Women (Autonomous)",
+    "Address": "Periyakulam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 195,
+    "Name": "Jeyaraj Chelladurai College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 196,
+    "Name": "John Bosco Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 197,
+    "Name": "Joseph Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 198,
+    "Name": "Jothi College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 199,
+    "Name": "Justice Basheer Ahmed Syed College for Women (S.I.E.T)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 200,
+    "Name": "K.C.S. Kasi Nadar College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 201,
+    "Name": "K.G. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 202,
+    "Name": "K.M.G. College of Arts and Science",
+    "Address": "Gudiyattam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 203,
+    "Name": "K.R. Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 204,
+    "Name": "K.S. Raja College of Arts and Science for Women",
+    "Address": "Gingee Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 205,
+    "Name": "K.S.G. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 206,
+    "Name": "K.S.R. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 207,
+    "Name": "Kaamadhenu Arts and Science College",
+    "Address": "Sathyamangalam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 208,
+    "Name": "Kairali Arts Science and Commerce College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 209,
+    "Name": "Kamadhenu College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 210,
+    "Name": "Kamaraj College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 211,
+    "Name": "Kamban College Arts and Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 212,
+    "Name": "Kanchi Kamatchi Amman Arts and Science College for Women",
+    "Address": "Kanchipuram Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 213,
+    "Name": "Kanchi Shri Krishna College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 214,
+    "Name": "Kandaswami Kandar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 215,
+    "Name": "Karpagam University (Karpagam Arts and Science College)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 216,
+    "Name": "Karuppannan Mariappan College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 217,
+    "Name": "Kaveripakkam Arts and Science College",
+    "Address": "Kaveripakkam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 218,
+    "Name": "KAYPEEYES College of Arts and Science",
+    "Address": "Kotagiri",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nilgiris",
+    "DistrictId": 529
+  },
+  {
+    "Id": 219,
+    "Name": "Khadir Mohideen College",
+    "Address": "Adirampattinam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 220,
+    "Name": "King Nandivarman College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 221,
+    "Name": "Kings College of Arts and Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 222,
+    "Name": "Kodaikanal Christian College",
+    "Address": "Kodaikanal",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 223,
+    "Name": "Kongu Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 224,
+    "Name": "Kongu College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 225,
+    "Name": "Kongunadu Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 226,
+    "Name": "Kovai Kalaimagal College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 227,
+    "Name": "Krishnasamy College of Science Arts and Management for Women",
+    "Address": "Cuddalore Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 228,
+    "Name": "Kumara Rani Meena Muthiah College of Arts and Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 229,
+    "Name": "Kundavai Nachiyar (K.N) Govt. College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 230,
+    "Name": "Kurinji Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 231,
+    "Name": "L.R.G. Govt. Arts College for Women",
+    "Address": "Tiruppur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 232,
+    "Name": "Lady Doak College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 233,
+    "Name": "Lakshmi Narayanan Visalakshi College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 234,
+    "Name": "Lakshmipuram College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 235,
+    "Name": "Loganatha Narayanasamy Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 236,
+    "Name": "Loyola College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 237,
+    "Name": "M.A.V.M.M. Ayira Vysiar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 238,
+    "Name": "M.G.R. College",
+    "Address": "Hosur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 239,
+    "Name": "M.I.E.T. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 240,
+    "Name": "Madurai Kamaraj University",
+    "Address": "Palkalai Nagar",
+    "PinCode": 625021,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 241,
+    "Name": "M.M.E.S. Women Arts and Science College",
+    "Address": "Walaja Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 242,
+    "Name": "M.O.P. Vaishnav College for Women (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 243,
+    "Name": "M.R. Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 244,
+    "Name": "M.S.S. Wakf Board College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 245,
+    "Name": "M.V. Muthiah Govt. Arts College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 246,
+    "Name": "Madha Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 247,
+    "Name": "Madras Christian College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 248,
+    "Name": "Madura College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 249,
+    "Name": "Madurai Institute of Social Sciences",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 250,
+    "Name": "Madurai Kamaraj University College",
+    "Address": "Aundipatti",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 251,
+    "Name": "Sree Abiraami Arts and Science College for Women",
+    "Address": "Gudiyattam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 520
+  },
+  {
+    "Id": 252,
+    "Name": "Madurai Kamaraj University College",
+    "Address": "Tallakulam",
+    "PinCode": 625002,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 253,
+    "Name": "Madurai Kamaraj University Evening College",
+    "Address": "Palani",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 254,
+    "Name": "Madurai Kamaraj University Evening College",
+    "Address": "Paramakudi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 255,
+    "Name": "Madurai Kamaraj University Evening College",
+    "Address": "Periyakulam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 256,
+    "Name": "Bharathidasan University College for Women",
+    "Address": "Orathanadu",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 532
+  },
+  {
+    "Id": 257,
+    "Name": "Madurai Kamaraj University Evening College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 258,
+    "Name": "Madurai Sivakasi Nadars College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 259,
+    "Name": "Mahalakshmi College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 260,
+    "Name": "Maharaja Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 261,
+    "Name": "Maharaja College for Women",
+    "Address": "Perundurai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 262,
+    "Name": "Maharani Arts and Science Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 263,
+    "Name": "Mahatma Arts and Science College",
+    "Address": "Illuppur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 264,
+    "Name": "Mahendra College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 265,
+    "Name": "Malankara Catholic College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 266,
+    "Name": "Mangayarkarasi Arts and Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 267,
+    "Name": "Manickam College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 268,
+    "Name": "Mannar Tirumalai Naicker College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 269,
+    "Name": "Mar Gregorios Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 270,
+    "Name": "Marrapan Lakshmiamma Arts and Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 271,
+    "Name": "Marudhur Kesari Jain College for Women",
+    "Address": "Vaniyampadi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 272,
+    "Name": "Maruthupandiyar College",
+    "Address": "Vallam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 273,
+    "Name": "Mass College of Arts and Science",
+    "Address": "Kumbakonam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 274,
+    "Name": "Matha College of Arts and Sciences",
+    "Address": "Manamadurai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 275,
+    "Name": "Mazharul Uloom College",
+    "Address": "Ambur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 276,
+    "Name": "Meenakshi Ammal Arts and Science College for Women",
+    "Address": "Uthiramerur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 277,
+    "Name": "Meenakshi Chandrasekaran College of Arts and Science",
+    "Address": "Pattukkottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 278,
+    "Name": "Meenakshi College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 279,
+    "Name": "Meenakshi Ramasamy Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 280,
+    "Name": "Mercury College of Arts and Science",
+    "Address": "Arakonam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 281,
+    "Name": "Michael Job College of Arts and Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 282,
+    "Name": "Modern Arts and Science College",
+    "Address": "Jayankondam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 283,
+    "Name": "Mohamed Sathak AJ College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 284,
+    "Name": "Moti and Moti Arts and Science College",
+    "Address": "Thanjavur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 285,
+    "Name": "Muslim Arts College",
+    "Address": "Tiruvithamcode",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 286,
+    "Name": "Muthayammal College of Arts and Science",
+    "Address": "Rasipuram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 287,
+    "Name": "Muthurangam Government Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 288,
+    "Name": "N.K.R. Government Arts College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 289,
+    "Name": "N.M.S. Sermathai Vasan College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 290,
+    "Name": "N.M.S.S. Vellachami Nadar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 291,
+    "Name": "N.P.R. Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 292,
+    "Name": "Nadar Saraswathy College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 293,
+    "Name": "Naina Mohamed College of Arts and Science",
+    "Address": "Aranthangi Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 294,
+    "Name": "Nallamuthu Gounder Mahalingam College (Autonomous)",
+    "Address": "Pollachi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 295,
+    "Name": "Nandha Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 296,
+    "Name": "National College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 297,
+    "Name": "Navarasam Arts and Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 298,
+    "Name": "Nazareth College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 299,
+    "Name": "Nazareth Margochis College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 300,
+    "Name": "Nehru Arts and Science College",
+    "Address": "Thirumalayampalayam",
+    "PinCode": 641105,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 301,
+    "Name": "Nehru College of Arts and Science",
+    "Address": "Tirupur",
+    "PinCode": 641604,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 302,
+    "Name": "Nehru Memorial College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 303,
+    "Name": "Nesamony Memorial Christian College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 304,
+    "Name": "Nethaji Subash Chandra Bose College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 305,
+    "Name": "New College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 306,
+    "Name": "New Prince Shri Bhavani Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 307,
+    "Name": "Nirmala College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 308,
+    "Name": "Noorl Islam Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 309,
+    "Name": "P.G.P. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 310,
+    "Name": "P.K.N. Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 311,
+    "Name": "P.K.R. Arts College for Women",
+    "Address": "Gobichettipalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 312,
+    "Name": "P.M.P. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 313,
+    "Name": "P.S.G. College of Arts and Science (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 314,
+    "Name": "P.S.G.R. Krishnamal College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 315,
+    "Name": "Paavendhar College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 316,
+    "Name": "Pachaiyappa College for Men",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 317,
+    "Name": "Pachaiyappa College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 318,
+    "Name": "Pachaiyappa College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 319,
+    "Name": "Pachamuthu Arts and Science Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 320,
+    "Name": "Padmavani College of Arts and Science for Women",
+    "Address": "Omalur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 321,
+    "Name": "Pannaikadu Veerammal Paramasivam College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 322,
+    "Name": "Park College",
+    "Address": "Tirupur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 323,
+    "Name": "Parvathy Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 324,
+    "Name": "Pasumbon Muthuramalinga Thevar College",
+    "Address": "Melaneelithanallur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 325,
+    "Name": "Pasumpon Muthuramalinga Thevar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 326,
+    "Name": "Pasumpon Thiru. Muthuramalinga Thevar College",
+    "Address": "Ramnad",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 327,
+    "Name": "Patrician College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 328,
+    "Name": "Pattammal Alagesan College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 329,
+    "Name": "Pavendar Bharadhidasan Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 330,
+    "Name": "Pee Gee College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 331,
+    "Name": "Perarignar Anna College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 332,
+    "Name": "Periyar Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 333,
+    "Name": "Periyar E.V.R. College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 334,
+    "Name": "Periyar University College of Arts and Science",
+    "Address": "Mettur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 335,
+    "Name": "Pioneer College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 336,
+    "Name": "Pioneer Kumarasamy College",
+    "Address": "Nagercoil",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 337,
+    "Name": "Ponnaiyah Ramajayam College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 338,
+    "Name": "Poompuhar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 339,
+    "Name": "Poonga College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 340,
+    "Name": "Pope College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 341,
+    "Name": "Presidency College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 342,
+    "Name": "Prince Shri Venkateshwara Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 343,
+    "Name": "Prof. Dhanapalan College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 344,
+    "Name": "Providence College for Women",
+    "Address": "Udhagamandalam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nilgiris",
+    "DistrictId": 529
+  },
+  {
+    "Id": 345,
+    "Name": "Quaid-e-Millet College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 346,
+    "Name": "Quaid-e-Millet Government Arts College for Women (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 347,
+    "Name": "Queen Mary College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 348,
+    "Name": "R.B. Gothi Jain College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 349,
+    "Name": "R.T.G. Arts and Science College for Women",
+    "Address": "Gingee Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 350,
+    "Name": "R.V.S. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 351,
+    "Name": "Rabiammal Ahamed Maideen College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 352,
+    "Name": "Rabindharanath Tagore College of Arts and Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 353,
+    "Name": "Raja Duraisingam Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 354,
+    "Name": "Rajagiri Dawood Batcha College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 355,
+    "Name": "Rajah Serfoji Govt.Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 356,
+    "Name": "Rajahs College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 357,
+    "Name": "Rajapalayam Raju College",
+    "Address": "Rajapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 358,
+    "Name": "Rajeswari Arts and Scinece College for Women",
+    "Address": "Vanur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 359,
+    "Name": "Rajeswari Vedachalam Government Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 360,
+    "Name": "Rama Prabha College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 361,
+    "Name": "Ramakrishna Mission Vivekananda College (Men)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 362,
+    "Name": "Ramasamy Tamil College",
+    "Address": "Karaikudi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 363,
+    "Name": "Rathinam College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 364,
+    "Name": "Rev. Jacob Memorial Christian College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 365,
+    "Name": "Rose Mary Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 366,
+    "Name": "S.B.A. College of Science and Management",
+    "Address": "Arani",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 367,
+    "Name": "S.B.K. College",
+    "Address": "Aruppukottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 368,
+    "Name": "S.D.N. Bhatt Vaishnav College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 369,
+    "Name": "S.I.V.E.T. College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 370,
+    "Name": "S.K. College of Arts and Science",
+    "Address": "Mannargudi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 371,
+    "Name": "S.K.S.S. Arts College",
+    "Address": "Thiruppanandal",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 372,
+    "Name": "S.M.S. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 373,
+    "Name": "S.N.R. Sons College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 374,
+    "Name": "S.P. College of Science and Arts",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 375,
+    "Name": "S.R.M. Arts and Science College",
+    "Address": "Chengalpattu Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 376,
+    "Name": "S.S. Duraisamy Nadar Maariammal College",
+    "Address": "Kovilpatti",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 377,
+    "Name": "S.S.M. College of Arts and Science",
+    "Address": "Komarapalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 378,
+    "Name": "S.S.S. College Art",
+    "Address": "Science and Management",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 379,
+    "Name": "S.T. Hindu College",
+    "Address": "Nagercoil",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 380,
+    "Name": "Sacred Heart Evening College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 381,
+    "Name": "Sadakathullah Appa College",
+    "Address": "Palayamkottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 382,
+    "Name": "Salem Sowdeswari College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 383,
+    "Name": "Sami Arul Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 384,
+    "Name": "Sankara College of Science and Commerce",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 385,
+    "Name": "Sarah Tucker College",
+    "Address": "Palayamkottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 386,
+    "Name": "Saraswathy Narayanan College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 387,
+    "Name": "Saratha College of Arts and Science",
+    "Address": "Gobichettipalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 388,
+    "Name": "Sardar Raja Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 389,
+    "Name": "Sattanatha Karaiyalar College",
+    "Address": "Tenkasi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 390,
+    "Name": "Scott Christian College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 391,
+    "Name": "SCSVMV University (Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 392,
+    "Name": "Seethalakshmi Achi College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 393,
+    "Name": "Seethalakshmi Ramaswamy College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 394,
+    "Name": "Selvam Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 395,
+    "Name": "Semgamala Thaayar Educational Trust Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 396,
+    "Name": "Sengunthar College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 397,
+    "Name": "Senthamil College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 398,
+    "Name": "Sethupathy Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 399,
+    "Name": "Shiri Kumaran College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 400,
+    "Name": "Shri Aravindar Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 401,
+    "Name": "Shri Chandra Prabhu Jain College for Men",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 402,
+    "Name": "Shri Nehru Maha Vidyalaya College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 403,
+    "Name": "Shri Raghavendra Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 404,
+    "Name": "Shri Shankarlal Sundarbai Shasun Jain College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 405,
+    "Name": "Shrimathi Indira Gandhi College (Women)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 406,
+    "Name": "Shunmuga Industries Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 407,
+    "Name": "Siga College of Management and Computer Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 408,
+    "Name": "Sindhi College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 409,
+    "Name": "Government Arts And Science College",
+    "Address": "R.K.Nagar",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 410,
+    "Name": "Sivanthi Adithanar College",
+    "Address": "Nagercoil",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 411,
+    "Name": "Soka Ikeda Arts and Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 412,
+    "Name": "Sonai Meenal Arts and Science College",
+    "Address": "Mudukulathur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 413,
+    "Name": "Sourashtra College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 414,
+    "Name": "Sourashtra College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 415,
+    "Name": "Sree Amman Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 416,
+    "Name": "Sree Ayyappa College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 417,
+    "Name": "Sree Devi Kumari Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 418,
+    "Name": "Sree Narayana Guru College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 419,
+    "Name": "Sree Ramu College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 420,
+    "Name": "Sree Saraswathy Thyagaraja College",
+    "Address": "Pollachi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 421,
+    "Name": "Sree Sevugan Annamalai College",
+    "Address": "Devakottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 422,
+    "Name": "Sri Adi Chunchanagiri Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 423,
+    "Name": "Sri Akilandeswari Women College",
+    "Address": "Vandavasi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 424,
+    "Name": "Sri Arumugam Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 425,
+    "Name": "Sri Balamurugan Arts and Science College",
+    "Address": "Mettur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 426,
+    "Name": "Sri Bharathi Arts and Science College (W)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 427,
+    "Name": "Sri Bharathi Women�s Arts and Science College",
+    "Address": "Arni Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 428,
+    "Name": "Sri Bharathivelu Arts and Science College",
+    "Address": "Walaja Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 429,
+    "Name": "Sri G.V.G. Visalakshi College for Women (Autonomous)",
+    "Address": "Udumalpet",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 430,
+    "Name": "Sri Ganesh College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 431,
+    "Name": "Sri Gee College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 432,
+    "Name": "Sri Jayendra Saraswathy Maha Vidayalaya College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 433,
+    "Name": "Sri K.G.S. Arts College",
+    "Address": "Srivaikuntam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 434,
+    "Name": "Sri Kaliswari College",
+    "Address": "Sivakasi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 435,
+    "Name": "Sri Kandhan College of Arts and Science",
+    "Address": "Erode",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 436,
+    "Name": "Sri Kanniga Parameswari Arts and Science College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 437,
+    "Name": "Sri Krishna Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 438,
+    "Name": "Sri Meenakshi Govt. College for Women (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 439,
+    "Name": "Sri Muthukumaran Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 440,
+    "Name": "Sri Muthukumarasamy College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 441,
+    "Name": "Sri Nagalakshmi Ammal Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 442,
+    "Name": "Sri Paramakalyani College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 443,
+    "Name": "Sri Parasakthi Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 444,
+    "Name": "Sri Ramakrishna College of Arts and Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 445,
+    "Name": "Sri Ramakrishna Mission Vidyalaya College of Arts and Science (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 446,
+    "Name": "Sri Ramalinga Sowdambigai College of Science and Commerce",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 447,
+    "Name": "Sri S. Ramasamy Naidu Memorial College",
+    "Address": "Sattur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 448,
+    "Name": "Sri Sai Bharath College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 449,
+    "Name": "Sri Sakthi Kailash College of Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 450,
+    "Name": "Sri Sankara Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 451,
+    "Name": "Sri Sankara Arts and Science College",
+    "Address": "Kumbakonam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 452,
+    "Name": "Sri Sarada College for Women (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 453,
+    "Name": "Sri Sarada Niketan College of Science for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 454,
+    "Name": "Sri Saradha College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 455,
+    "Name": "Sri Saradha Niketan College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 456,
+    "Name": "Sri Saradha Women College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 457,
+    "Name": "Sri Subramaniaswami Government Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 458,
+    "Name": "Sri Thangam Periyasamy Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 459,
+    "Name": "Sri Vasavi College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 460,
+    "Name": "Sri Venkateswara College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 461,
+    "Name": "Sri Vidhya Mandir Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 462,
+    "Name": "Sri Vijay Vidyalaya College of Arts & Science(Women�s)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 463,
+    "Name": "Sri Vinayaga College of Arts and Science",
+    "Address": "Ulundurpet",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 464,
+    "Name": "Sridevi Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvallur",
+    "DistrictId": 541
+  },
+  {
+    "Id": 465,
+    "Name": "Srimad Andavan Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 466,
+    "Name": "Srimath Sivagnana Balaya Swamigal Tamil College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 467,
+    "Name": "Srinivasan College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 468,
+    "Name": "Sriram College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 469,
+    "Name": "St. George Jayaraj Chelladurai College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 470,
+    "Name": "St. John College",
+    "Address": "Palayamkottai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 471,
+    "Name": "St. Joseph College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 472,
+    "Name": "St. Joseph College (Arts and Science)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 473,
+    "Name": "St. Joseph College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 474,
+    "Name": "St. Joseph College of Arts and Science for Women",
+    "Address": "Hosur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 475,
+    "Name": "St. Josephs College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 476,
+    "Name": "St. Jude College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 477,
+    "Name": "St. Louis College for the Deaf",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 478,
+    "Name": "St. Mary College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 479,
+    "Name": "St. Thomas College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 480,
+    "Name": "St. Xavier College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 481,
+    "Name": "Stella Maris College for Women (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 482,
+    "Name": "Subbalakshmi Lakshmipathi College of Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 483,
+    "Name": "Subramaniyam College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 484,
+    "Name": "Subramanya College of Arts and Science",
+    "Address": "Palani",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 485,
+    "Name": "Sudharsan College of Arts and Science",
+    "Address": "Illuppur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Pudukkottai",
+    "DistrictId": 531
+  },
+  {
+    "Id": 486,
+    "Name": "Sulthana Adbullah Rowther College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 487,
+    "Name": "Syed Hammeda Arts and Science College",
+    "Address": "Kilakkarai",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 488,
+    "Name": "T.B.M.L. College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 489,
+    "Name": "T.D.M.N.S. College",
+    "Address": "T. Kallikulam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 490,
+    "Name": "T.M.G. College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 491,
+    "Name": "T.S. Narayanasamy College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 492,
+    "Name": "T.T. Narasimhan - Swami Dayananda College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 493,
+    "Name": "Tagore College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 494,
+    "Name": "Tamilavel Uma Maheswarnar Karanthai Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 495,
+    "Name": "Tamilnadu Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 496,
+    "Name": "TERF Academy College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 497,
+    "Name": "Texcity Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 498,
+    "Name": "Thanthai Hans Roever College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Perambalur",
+    "DistrictId": 530
+  },
+  {
+    "Id": 499,
+    "Name": "Thassim Beevi Abdul Kadar College for Women",
+    "Address": "Ramnad",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Ramanathapuram",
+    "DistrictId": 532
+  },
+  {
+    "Id": 500,
+    "Name": "Thavathiru Santhalinga Adigallar Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 501,
+    "Name": "The American College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 502,
+    "Name": "The M.D.T. Hindu College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 503,
+    "Name": "The Standard Fireworks Rajarathinam College for Women (Autonomous)",
+    "Address": "Sivakasi",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 504,
+    "Name": "Theivanai Ammal College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 505,
+    "Name": "Theni College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 506,
+    "Name": "Thiagarajar College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 507,
+    "Name": "Thiru Govindasamy Government Arts College",
+    "Address": "Tindivanam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 508,
+    "Name": "Thiru Kolanjiappar Government Arts College",
+    "Address": "Virudhachalam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 509,
+    "Name": "Thiru-Vi-Ka Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 510,
+    "Name": "Thirumurugan College of Arts and Science",
+    "Address": "Thiruvallur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 511,
+    "Name": "Thirupattur Arts And Science College",
+    "Address": "Thirupattur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 512,
+    "Name": "Thiruthangal Nadar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 513,
+    "Name": "Thiruvalluvar Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 514,
+    "Name": "Thiruvalluvar College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 539
+  },
+  {
+    "Id": 515,
+    "Name": "Thiruvalluvar Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 516,
+    "Name": "Tirukkovilur College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 517,
+    "Name": "Tiruppur Kumaran College for Women",
+    "Address": "Tirupur",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 518,
+    "Name": "Trinity College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 519,
+    "Name": "Udaya College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 520,
+    "Name": "Urumu Dhanalakshmi College",
+    "Address": "Trichy",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 521,
+    "Name": "V.H.N.S.N. College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 522,
+    "Name": "V.L.B. Janakiammal College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 523,
+    "Name": "V.N. Krishnasamy Naidu College of Arts and Science for Women",
+    "Address": "Mettuppalayam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 524,
+    "Name": "V.O. Chidambaram College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 525,
+    "Name": "V.P.M.M. Arts and Science College for Women",
+    "Address": "Srivilliputtur Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 526,
+    "Name": "V.S. Sivalingam Govt. Arts College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 527,
+    "Name": "V.T.M College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 528,
+    "Name": "V.V.V. College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 529,
+    "Name": "Vailakanni Malathy Pannicker College of Arts and Science",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 530,
+    "Name": "Valliammal College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 531,
+    "Name": "Valluvar College of Science and Management",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Karur",
+    "DistrictId": 524
+  },
+  {
+    "Id": 532,
+    "Name": "Vel Sri Ranga Sanku College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 533,
+    "Name": "Vellakoil Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 534,
+    "Name": "Vellalar College for Women",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Erode",
+    "DistrictId": 521
+  },
+  {
+    "Id": 535,
+    "Name": "Vels University (Vel College of Science)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 536,
+    "Name": "Vidhya Sagar Women College",
+    "Address": "Chengalpattu",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 537,
+    "Name": "Vidyasagar College of Arts and Science",
+    "Address": "Udumalpet",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 538,
+    "Name": "Vinayaka Missions Kirupananda Variyar Arts and Science College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 539,
+    "Name": "Vivekananda Arts and Science College for Women",
+    "Address": "Sirkali Taluk",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Nagapattinam",
+    "DistrictId": 527
+  },
+  {
+    "Id": 540,
+    "Name": "Vivekananda College",
+    "Address": "Agasteeswaram",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 541,
+    "Name": "Vivekanandha College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 542,
+    "Name": "Vivekanandha College for Women",
+    "Address": "Tiruchengode",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 543,
+    "Name": "Vivekanandha College of Arts and Science (W)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Namakkal",
+    "DistrictId": 528
+  },
+  {
+    "Id": 544,
+    "Name": "Voorhees College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Vellore",
+    "DistrictId": 544
+  },
+  {
+    "Id": 545,
+    "Name": "Vysya College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 546,
+    "Name": "Wavoo Wajeeha Womens College",
+    "Address": "Kayalpatnam",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 547,
+    "Name": "Women Christian College (Autonomous)",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 548,
+    "Name": "Women Christian College",
+    "Address": "Nagercoil",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 549,
+    "Name": "Yadava College",
+    "Address": "",
+    "PinCode": 0,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 550,
+    "Name": "Tamilnadu Dr.Ambedkar�Law�University",
+    "Address": "Raja Annamalai Puram",
+    "PinCode": 600028,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 551,
+    "Name": "Sathyabama Institute of Science and Technology",
+    "Address": "Rajiv Gandhi� Road",
+    "PinCode": 600119,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 552,
+    "Name": "Madras University",
+    "Address": "Triplicane",
+    "PinCode": 600005,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 553,
+    "Name": "Sir Theagaraya College",
+    "Address": "Washermanpet",
+    "PinCode": 600021,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 554,
+    "Name": "Stanley Medical College",
+    "Address": "Old Washermanpet",
+    "PinCode": 600001,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 555,
+    "Name": "Madras Medical College",
+    "Address": "Park Town",
+    "PinCode": 600003,
+    "ContactNumber": "NULL",
+    "District": "Chennai",
+    "DistrictId": 516
+  },
+  {
+    "Id": 556,
+    "Name": "St. Paul College of Arts and Science for Women",
+    "Address": "Thadagam Main Road",
+    "PinCode": 641025,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 557,
+    "Name": "Dr.R.V.Arts and Science College",
+    "Address": "Karamadai",
+    "PinCode": 641104,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 558,
+    "Name": "Bharathiar University",
+    "Address": "Marudhamalai Road",
+    "PinCode": 641046,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 559,
+    "Name": "Bharathiar University Arts and Science College",
+    "Address": "Gudalur",
+    "PinCode": 643212,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 560,
+    "Name": "Coimbatore Medical College",
+    "Address": "Peelamedu",
+    "PinCode": 641018,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 561,
+    "Name": "AVP College of Arts and Science",
+    "Address": "Tirupur",
+    "PinCode": 641654,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 562,
+    "Name": "Pollachi College of Arts and Science",
+    "Address": "Pollachi�",
+    "PinCode": 642205,
+    "ContactNumber": "NULL",
+    "District": "Coimbatore",
+    "DistrictId": 517
+  },
+  {
+    "Id": 563,
+    "Name": "Annamalai University",
+    "Address": "Chidambaram",
+    "PinCode": 608002,
+    "ContactNumber": "NULL",
+    "District": "Cuddalore",
+    "DistrictId": 518
+  },
+  {
+    "Id": 564,
+    "Name": "Government�Dharmapuri Medical College",
+    "Address": "Dharmapuri",
+    "PinCode": 636701,
+    "ContactNumber": "NULL",
+    "District": "Dharmapuri",
+    "DistrictId": 519
+  },
+  {
+    "Id": 565,
+    "Name": "Mother Teresa Womens University College",
+    "Address": "Kodaikanal",
+    "PinCode": 624102,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 566,
+    "Name": "Arulmigu Palaniandavar Arts College For Women",
+    "Address": "Palani",
+    "PinCode": 624615,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 567,
+    "Name": "St. Antony College of Arts and Science for Women",
+    "Address": "Thamaraipadi",
+    "PinCode": 624005,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 568,
+    "Name": "Sakthi�College of Arts and Science for Women",
+    "Address": "Oddanchatram",
+    "PinCode": 624619,
+    "ContactNumber": "NULL",
+    "District": "Dindigul",
+    "DistrictId": 520
+  },
+  {
+    "Id": 569,
+    "Name": "Sri Malolan College of Arts and Science",
+    "Address": "Madurantakam",
+    "PinCode": 603306,
+    "ContactNumber": "NULL",
+    "District": "Kancheepuram",
+    "DistrictId": 522
+  },
+  {
+    "Id": 570,
+    "Name": "Kanyakumari�Government�Medical College",
+    "Address": "Nagercoil",
+    "PinCode": 629201,
+    "ContactNumber": "NULL",
+    "District": "Kanyakumari",
+    "DistrictId": 523
+  },
+  {
+    "Id": 571,
+    "Name": "Madurai Gandhi N.M.R.Subbaraman College for Women",
+    "Address": "Sourastra Teachers Colony",
+    "PinCode": 625009,
+    "ContactNumber": "NULL",
+    "District": "Madurai",
+    "DistrictId": 526
+  },
+  {
+    "Id": 572,
+    "Name": "Manonmaniam Sundaranar University (M.S.U) Constituent College",
+    "Address": "Vilathikulam�Taluk",
+    "PinCode": 0,
+    "ContactNumber": "",
+    "District": "",
+    "DistrictId": ""
+  },
+  {
+    "Id": 573,
+    "Name": "Mohan Kumaramangalam�Medical�College",
+    "Address": "Sarkar Kollappatty",
+    "PinCode": 636030,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 574,
+    "Name": "Kailash Women College",
+    "Address": "Nangavalli",
+    "PinCode": 636502,
+    "ContactNumber": "NULL",
+    "District": "Salem",
+    "DistrictId": 533
+  },
+  {
+    "Id": 575,
+    "Name": "Government�Sivagangai Medical College",
+    "Address": "Manamadurai road",
+    "PinCode": 630562,
+    "ContactNumber": "NULL",
+    "District": "Sivagangai",
+    "DistrictId": 534
+  },
+  {
+    "Id": 576,
+    "Name": "Thanjavur Medical College",
+    "Address": "Thanjavur Medical College Road",
+    "PinCode": 613004,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 577,
+    "Name": "Sastra University",
+    "Address": "Thirumalaisamudram",
+    "PinCode": 613401,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 578,
+    "Name": "Annai Vailankanni Arts And Science College",
+    "Address": "Pudukkottai Road",
+    "PinCode": 613007,
+    "ContactNumber": "NULL",
+    "District": "Thanjavur",
+    "DistrictId": 535
+  },
+  {
+    "Id": 579,
+    "Name": "Thiravium�College of Arts and Science�for Women",
+    "Address": "Periyakulam�",
+    "PinCode": 625605,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 580,
+    "Name": "Theni Kammavar Sangam (T.K.S) College of Arts�and�Science",
+    "Address": "Koduvilarpatty",
+    "PinCode": 625534,
+    "ContactNumber": "NULL",
+    "District": "Theni",
+    "DistrictId": 536
+  },
+  {
+    "Id": 581,
+    "Name": "Government�Thiruvarur Medical College",
+    "Address": "Collector Office Road",
+    "PinCode": 610004,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 582,
+    "Name": "Sengamala Thayaar�Educational Trust (STET)�Women College",
+    "Address": "Mannargudi",
+    "PinCode": 614016,
+    "ContactNumber": "NULL",
+    "District": "Thiruvarur",
+    "DistrictId": 543
+  },
+  {
+    "Id": 583,
+    "Name": "Manonmaniam Sundaranar University",
+    "Address": "Abishekapatti",
+    "PinCode": 627012,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 536
+  },
+  {
+    "Id": 584,
+    "Name": "Mahatma Gandhi College of Arts and Science",
+    "Address": "Sankaran Kovil Taluk",
+    "PinCode": 627753,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 536
+  },
+  {
+    "Id": 585,
+    "Name": "Sri Ram Nallamani Yadava College of Arts and Science",
+    "Address": "Tenkasi",
+    "PinCode": 627804,
+    "ContactNumber": "NULL",
+    "District": "Tirunelveli",
+    "DistrictId": 536
+  },
+  {
+    "Id": 586,
+    "Name": "Shanmuga Industries Arts and Science College",
+    "Address": "Kilnakkarai",
+    "PinCode": 606601,
+    "ContactNumber": "NULL",
+    "District": "Tiruvannamalai",
+    "DistrictId": 542
+  },
+  {
+    "Id": 587,
+    "Name": "K.A.P. Viswanatham Medical College",
+    "Address": "Collector Office Road",
+    "PinCode": 620001,
+    "ContactNumber": "NULL",
+    "District": "Tiruchirapalli",
+    "DistrictId": 538
+  },
+  {
+    "Id": 588,
+    "Name": "G.Venkataswamy Naidu (G.V.N) College",
+    "Address": "Kovilpatti",
+    "PinCode": 628502,
+    "ContactNumber": "NULL",
+    "District": "Tuticorin",
+    "DistrictId": 537
+  },
+  {
+    "Id": 589,
+    "Name": "Arignar Anna Government Arts College",
+    "Address": "Keezperum Pakkam",
+    "PinCode": 605602,
+    "ContactNumber": "NULL",
+    "District": "Viluppuram",
+    "DistrictId": 545
+  },
+  {
+    "Id": 590,
+    "Name": "Ayya Nadar Janaki Ammal College",
+    "Address": "Sivakasi",
+    "PinCode": 626123,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 591,
+    "Name": "Kalasalingam University",
+    "Address": "Rajapalayam",
+    "PinCode": 626126,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  },
+  {
+    "Id": 592,
+    "Name": "Arulmigu Kalasalingam College Of Arts And Science",
+    "Address": "Krishnankoil",
+    "PinCode": 626138,
+    "ContactNumber": "NULL",
+    "District": "Virudhunagar",
+    "DistrictId": 546
+  }
+]

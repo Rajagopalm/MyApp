@@ -1,0 +1,717 @@
+[
+  {
+    "Id": 1,
+    "Code": "B.A. (Gen)",
+    "Name": "Bachelor of Arts"
+  },
+  {
+    "Id": 2,
+    "Code": "B.A. B.Ed",
+    "Name": "Bachelor of Arts Bachelor of Education"
+  },
+  {
+    "Id": 3,
+    "Code": "B.A. B.L",
+    "Name": "Bachelor of Arts Bachelor of Law"
+  },
+  {
+    "Id": 4,
+    "Code": "B.A. Corp Eco",
+    "Name": "Bachelor of Arts Corporate Economics"
+  },
+  {
+    "Id": 5,
+    "Code": "B.A. Eco",
+    "Name": "Bachelor of Arts Economics"
+  },
+  {
+    "Id": 6,
+    "Code": "B.A. English",
+    "Name": "Bachelor of Arts English Literature"
+  },
+  {
+    "Id": 7,
+    "Code": "B.A. History",
+    "Name": "Bachelor of Arts History"
+  },
+  {
+    "Id": 8,
+    "Code": "B.A. HT",
+    "Name": "Bachelor of Arts History and Tourism"
+  },
+  {
+    "Id": 9,
+    "Code": "B.A. PS",
+    "Name": "Bachelor of Arts Political Science"
+  },
+  {
+    "Id": 10,
+    "Code": "B.A. SS",
+    "Name": "Bachelor of Arts Social Science"
+  },
+  {
+    "Id": 11,
+    "Code": "B.A. Tamil",
+    "Name": "Bachelor of Arts Tamil Literature"
+  },
+  {
+    "Id": 12,
+    "Code": "B.A. Urdu",
+    "Name": "Bachelor of Arts Urdu"
+  },
+  {
+    "Id": 13,
+    "Code": "B.A.J.M",
+    "Name": "Bachelor of Arts Journalism and Mass Communication"
+  },
+  {
+    "Id": 14,
+    "Code": "B.A.M.S",
+    "Name": "Bachelor of Ayurvedic Medicine and Surgery"
+  },
+  {
+    "Id": 15,
+    "Code": "B.A.S",
+    "Name": "Bachelor of Applied Sciences"
+  },
+  {
+    "Id": 16,
+    "Code": "B.A.S.L.P",
+    "Name": "Bachelor of Audiology and Speech Language Pathology"
+  },
+  {
+    "Id": 17,
+    "Code": "B.A.TTM",
+    "Name": "B.A.Tourism and Travel Management (B.A.TTM)"
+  },
+  {
+    "Id": 18,
+    "Code": "B.Arch",
+    "Name": "Bachelor of Architecture"
+  },
+  {
+    "Id": 19,
+    "Code": "B.B.A",
+    "Name": "Bachelor of Business Administration"
+  },
+  {
+    "Id": 20,
+    "Code": "B.B.A CA",
+    "Name": "Bachelor of Business Administration Computer Application"
+  },
+  {
+    "Id": 21,
+    "Code": "B.B.M",
+    "Name": "Bachelor of Business Management (B.B.M)"
+  },
+  {
+    "Id": 22,
+    "Code": "B.B.S",
+    "Name": "Bachelor of Business Studies (B.B.S)"
+  },
+  {
+    "Id": 23,
+    "Code": "B.B.S",
+    "Name": "Bachelor of Business Studies"
+  },
+  {
+    "Id": 24,
+    "Code": "B.C.A",
+    "Name": "Bachelor of Computer Applications (B.C.A)"
+  },
+  {
+    "Id": 25,
+    "Code": "B.C.J",
+    "Name": "Bachelor of Communication Journalism"
+  },
+  {
+    "Id": 26,
+    "Code": "B.C.S",
+    "Name": "Bachelor of Computer Science"
+  },
+  {
+    "Id": 27,
+    "Code": "B.Com (Acc and Fin)",
+    "Name": "Bachelor of Commerce  (Accounting and Finance)"
+  },
+  {
+    "Id": 28,
+    "Code": "B.Com (CA)",
+    "Name": "Bachelor of Commerce (Computer Applications)"
+  },
+  {
+    "Id": 29,
+    "Code": "B.Com (CS)",
+    "Name": "Bachelor of Commerce (Corporate Secretaryship)"
+  },
+  {
+    "Id": 30,
+    "Code": "B.Com (Gen)",
+    "Name": "Bachelor of Commerce (General)"
+  },
+  {
+    "Id": 31,
+    "Code": "B.Com (IT)",
+    "Name": "Bachelor of Commerce (Information Technology)"
+  },
+  {
+    "Id": 32,
+    "Code": "B.Com (PA)",
+    "Name": "Bachelor of Commerce (Professional Accounting)"
+  },
+  {
+    "Id": 33,
+    "Code": "B.D",
+    "Name": "Bachelor of Divinity"
+  },
+  {
+    "Id": 34,
+    "Code": "B.D.S",
+    "Name": "Bachelor of Dental Surgery"
+  },
+  {
+    "Id": 35,
+    "Code": "B.Des",
+    "Name": "Bachelor of Design"
+  },
+  {
+    "Id": 36,
+    "Code": "B.E",
+    "Name": "Bachelor of Engineering"
+  },
+  {
+    "Id": 37,
+    "Code": "B.E.S",
+    "Name": "Bachelor of Electronic Science"
+  },
+  {
+    "Id": 38,
+    "Code": "B.Ed. (Gen)",
+    "Name": "Bachelor of Education"
+  },
+  {
+    "Id": 39,
+    "Code": "B.Ed. AI",
+    "Name": "B.Ed. Artificial Intelligence (B.Ed AI)"
+  },
+  {
+    "Id": 40,
+    "Code": "B.EL.Ed",
+    "Name": "Bachelor of Elementary Education"
+  },
+  {
+    "Id": 41,
+    "Code": "B.F.A",
+    "Name": "Bachelor of Fine Arts"
+  },
+  {
+    "Id": 42,
+    "Code": "B.F.I.A",
+    "Name": "Bachelor of Financial Investment and Analysis"
+  },
+  {
+    "Id": 43,
+    "Code": "B.F.S",
+    "Name": "Bachelor of Fishery Sciences"
+  },
+  {
+    "Id": 44,
+    "Code": "B.F.Tech",
+    "Name": "Bachelor of Fashion Technology"
+  },
+  {
+    "Id": 45,
+    "Code": "B.G.L",
+    "Name": "Bachelor of General Law"
+  },
+  {
+    "Id": 46,
+    "Code": "B.H.M",
+    "Name": "Bachelor of Hotel Management"
+  },
+  {
+    "Id": 47,
+    "Code": "B.H.M.C.T",
+    "Name": "Bachelor of Hotel Management and Catering Technology"
+  },
+  {
+    "Id": 48,
+    "Code": "B.H.M.S",
+    "Name": "Bachelor of Homeopathic Medicine and Surgery"
+  },
+  {
+    "Id": 49,
+    "Code": "B.H.T.M",
+    "Name": "Bachelor of Hospitality and Tourism Management"
+  },
+  {
+    "Id": 50,
+    "Code": "B.I.S.M",
+    "Name": "Bachelor of Information Systems Management"
+  },
+  {
+    "Id": 51,
+    "Code": "B.J.M.C",
+    "Name": "Bachelor of Journalism and Mass Communication"
+  },
+  {
+    "Id": 52,
+    "Code": "B.L.I.S",
+    "Name": "Bachelor of Library and Information Science"
+  },
+  {
+    "Id": 53,
+    "Code": "B.L.M",
+    "Name": "Bachelor of Labour Management"
+  },
+  {
+    "Id": 54,
+    "Code": "B.L.Sc",
+    "Name": "Bachelor of Library Science"
+  },
+  {
+    "Id": 55,
+    "Code": "B.M.L.T",
+    "Name": "Bachelor of Medical Laboratory Technology"
+  },
+  {
+    "Id": 56,
+    "Code": "B.M.R",
+    "Name": "Bachelor of Mental Retardation"
+  },
+  {
+    "Id": 57,
+    "Code": "B.M.R.Sc",
+    "Name": "Bachelor of Medical Record Science"
+  },
+  {
+    "Id": 58,
+    "Code": "B.M.Sc.",
+    "Name": "Bachelor of Mobility Science"
+  },
+  {
+    "Id": 59,
+    "Code": "B.M.T",
+    "Name": "Bachelor of Medical Technology"
+  },
+  {
+    "Id": 60,
+    "Code": "B.N.Y.Sc",
+    "Name": "Bachelor of Naturopathy and Yogic Sciences"
+  },
+  {
+    "Id": 61,
+    "Code": "B.O.T",
+    "Name": "Bachelor of Occupational Therapy"
+  },
+  {
+    "Id": 62,
+    "Code": "B.Optom",
+    "Name": "Bachelor of Optometry and Vision Science"
+  },
+  {
+    "Id": 63,
+    "Code": "B.P.A.",
+    "Name": "Bachelor of Arts Public Administration"
+  },
+  {
+    "Id": 64,
+    "Code": "B.P.Ed",
+    "Name": "Bachelor of Physical Education"
+  },
+  {
+    "Id": 65,
+    "Code": "B.P.O",
+    "Name": "Bachelor of Prosthetics and Orthotics"
+  },
+  {
+    "Id": 66,
+    "Code": "B.P.R",
+    "Name": "Bachelor of Public Relations"
+  },
+  {
+    "Id": 67,
+    "Code": "B.P.T",
+    "Name": "Bachelor of Physiotherapy"
+  },
+  {
+    "Id": 68,
+    "Code": "B.Pharma",
+    "Name": "Bachelor of Pharmacy"
+  },
+  {
+    "Id": 69,
+    "Code": "B.R.T",
+    "Name": "Bachelor of Rehabilitation Therapy"
+  },
+  {
+    "Id": 70,
+    "Code": "B.S.L.A",
+    "Name": "Bachelor of Speech Language Audiology"
+  },
+  {
+    "Id": 71,
+    "Code": "B.S.L.LL.B",
+    "Name": "Bachelor of Socio Legal Sciences Bachelor of Laws"
+  },
+  {
+    "Id": 72,
+    "Code": "B.S.M.S",
+    "Name": "Bachelor of Siddha Medical Sciences"
+  },
+  {
+    "Id": 73,
+    "Code": "B.S.W",
+    "Name": "Bachelor Of Social Work"
+  },
+  {
+    "Id": 74,
+    "Code": "B.Sc. Bio Chemistry",
+    "Name": "Bachelor of Science Bio Chemistry"
+  },
+  {
+    "Id": 75,
+    "Code": "B.Sc. Botany",
+    "Name": "Bachelor of Science Botany"
+  },
+  {
+    "Id": 76,
+    "Code": "B.Sc. Chemistry",
+    "Name": "Bachelor of Science Chemistry"
+  },
+  {
+    "Id": 77,
+    "Code": "B.Sc. Comp Science",
+    "Name": "Bachelor of Science Computer Science"
+  },
+  {
+    "Id": 78,
+    "Code": "B.Sc. Education",
+    "Name": "Bachelor of Science Education"
+  },
+  {
+    "Id": 79,
+    "Code": "B.Sc. Electronics",
+    "Name": "Bachelor of Science Electronics"
+  },
+  {
+    "Id": 80,
+    "Code": "B.Sc. Env Science",
+    "Name": "Bachelor of Science Environmental Science"
+  },
+  {
+    "Id": 81,
+    "Code": "B.Sc. Geography",
+    "Name": "Bachelor of Science Geography"
+  },
+  {
+    "Id": 82,
+    "Code": "B.Sc. I.T",
+    "Name": "Bachelor of Science Information Technology"
+  },
+  {
+    "Id": 83,
+    "Code": "B.Sc. Maths",
+    "Name": "Bachelor of Science Mathematics"
+  },
+  {
+    "Id": 84,
+    "Code": "B.Sc. Microbiology",
+    "Name": "Bachelor of Science Microbiology"
+  },
+  {
+    "Id": 85,
+    "Code": "B.Sc. Nutri and Diet",
+    "Name": "Bachelor of Science Nutrition and Dietetics"
+  },
+  {
+    "Id": 86,
+    "Code": "B.Sc. Physics",
+    "Name": "Bachelor of Science Physics"
+  },
+  {
+    "Id": 87,
+    "Code": "B.Sc. Psychology",
+    "Name": "Bachelor of Science Psychology"
+  },
+  {
+    "Id": 88,
+    "Code": "B.Sc. Stats",
+    "Name": "Bachelor of Science Statistics"
+  },
+  {
+    "Id": 89,
+    "Code": "B.Sc. T and HM",
+    "Name": "Bachelor of Science Tourism and Hospitality Management"
+  },
+  {
+    "Id": 90,
+    "Code": "B.Sc. Vis Com",
+    "Name": "Bachelor of Science Visual Communication"
+  },
+  {
+    "Id": 91,
+    "Code": "B.Sc. Yoga",
+    "Name": "Bachelor of Science Yoga"
+  },
+  {
+    "Id": 92,
+    "Code": "B.Sc. Zoology",
+    "Name": "Bachelor of Science Zoology"
+  },
+  {
+    "Id": 93,
+    "Code": "B.T.A",
+    "Name": "Bachelor of Tourism Administration"
+  },
+  {
+    "Id": 94,
+    "Code": "B.Tech",
+    "Name": "Bachelors of Technology"
+  },
+  {
+    "Id": 95,
+    "Code": "B.U.M.S",
+    "Name": "Bachelor of Unani Medicine Surgery"
+  },
+  {
+    "Id": 96,
+    "Code": "B.V.Sc",
+    "Name": "Bachelor of Veterinary Science"
+  },
+  {
+    "Id": 97,
+    "Code": "M.A. C.D",
+    "Name": "Master of Arts Career Guidance"
+  },
+  {
+    "Id": 98,
+    "Code": "M.A. Economics",
+    "Name": "Master of Arts Economics"
+  },
+  {
+    "Id": 99,
+    "Code": "M.A. English",
+    "Name": "Master of Arts English Literature"
+  },
+  {
+    "Id": 100,
+    "Code": "M.A. History",
+    "Name": "Master of Arts History"
+  },
+  {
+    "Id": 101,
+    "Code": "M.A. J.M.C",
+    "Name": "Master of Arts Journalism and Mass Communication"
+  },
+  {
+    "Id": 102,
+    "Code": "M.A. Linguistics",
+    "Name": "Master of Arts Linguistics"
+  },
+  {
+    "Id": 103,
+    "Code": "M.A. PS and PA",
+    "Name": "Master of Arts Political Science and Public Administration"
+  },
+  {
+    "Id": 104,
+    "Code": "M.A. Sociology",
+    "Name": "Master of Arts Sociology"
+  },
+  {
+    "Id": 105,
+    "Code": "M.A. Tamil",
+    "Name": "Master of Arts Tamil"
+  },
+  {
+    "Id": 106,
+    "Code": "M.A. W.S",
+    "Name": "Master of Arts Women Studies"
+  },
+  {
+    "Id": 107,
+    "Code": "M.B.A",
+    "Name": "Master of Business Administration"
+  },
+  {
+    "Id": 108,
+    "Code": "M.B.B.S",
+    "Name": "Bachelor of Medicine Bachelor of Surgery"
+  },
+  {
+    "Id": 109,
+    "Code": "M.C.A",
+    "Name": "Master of Computer Application"
+  },
+  {
+    "Id": 110,
+    "Code": "M.Com (CA)",
+    "Name": "Master of Commerce (Computer Applications)"
+  },
+  {
+    "Id": 111,
+    "Code": "M.Com (Fin and Acc)",
+    "Name": "Master of Commerce (Finance and Accounting)"
+  },
+  {
+    "Id": 112,
+    "Code": "M.Com (Fin and CA)",
+    "Name": "Master of Commerce (Finance and Computer Applications)"
+  },
+  {
+    "Id": 113,
+    "Code": "M.Com (Gen)",
+    "Name": "Master of Commerce (General)"
+  },
+  {
+    "Id": 114,
+    "Code": "M.Ed. (Gen)",
+    "Name": "Master of Education"
+  },
+  {
+    "Id": 115,
+    "Code": "M.J.M.C",
+    "Name": "Master of Journalism and Mass Communication"
+  },
+  {
+    "Id": 116,
+    "Code": "M.L.I.S",
+    "Name": "Master of Library and Information Science"
+  },
+  {
+    "Id": 117,
+    "Code": "M.P.Ed",
+    "Name": "Master of Physical Education"
+  },
+  {
+    "Id": 118,
+    "Code": "M.S.W",
+    "Name": "Master of Social Work"
+  },
+  {
+    "Id": 119,
+    "Code": "M.Sc. App Psych",
+    "Name": "Master of Science Applied Psychology"
+  },
+  {
+    "Id": 120,
+    "Code": "M.Sc. BioChemistry",
+    "Name": "Master of Science BioChemistry"
+  },
+  {
+    "Id": 121,
+    "Code": "M.Sc. BioInformatics",
+    "Name": "Master of Science Bioinformatics"
+  },
+  {
+    "Id": 122,
+    "Code": "M.Sc. BioTech",
+    "Name": "Master of Science Biotechnology"
+  },
+  {
+    "Id": 123,
+    "Code": "M.Sc. Botany",
+    "Name": "Master of Science Botany"
+  },
+  {
+    "Id": 124,
+    "Code": "M.Sc. Chemistry",
+    "Name": "Master of Science Chemistry"
+  },
+  {
+    "Id": 125,
+    "Code": "M.Sc. Comp Sci",
+    "Name": "Master of Science Computer Science"
+  },
+  {
+    "Id": 126,
+    "Code": "M.Sc. Data Analytics",
+    "Name": "Master of Science Data Analytics"
+  },
+  {
+    "Id": 127,
+    "Code": "M.Sc. E and I",
+    "Name": "Master of Science Electronics and Instrumentation"
+  },
+  {
+    "Id": 128,
+    "Code": "M.Sc. Econometrics",
+    "Name": "Master of Science Econometrics"
+  },
+  {
+    "Id": 129,
+    "Code": "M.Sc. E-Learning Tech",
+    "Name": "Master of Science E-Learning Technology"
+  },
+  {
+    "Id": 130,
+    "Code": "M.Sc. Env Sciences",
+    "Name": "Master of Science Environmental Sciences"
+  },
+  {
+    "Id": 131,
+    "Code": "M.Sc. HG and MB",
+    "Name": "Master of Science Human Genetics and Molecular Biology"
+  },
+  {
+    "Id": 132,
+    "Code": "M.Sc. I.B",
+    "Name": "Master of Science Industrical Biotechnology"
+  },
+  {
+    "Id": 133,
+    "Code": "M.Sc. I.T",
+    "Name": "Master of Science Information Technology"
+  },
+  {
+    "Id": 134,
+    "Code": "M.Sc. Maths",
+    "Name": "Master of Science Mathematics"
+  },
+  {
+    "Id": 135,
+    "Code": "M.Sc. Maths with CA",
+    "Name": "Master of Science Mathematics with Computer Applications"
+  },
+  {
+    "Id": 136,
+    "Code": "M.Sc. Medical Physics",
+    "Name": "Master of Science Medical Physics"
+  },
+  {
+    "Id": 137,
+    "Code": "M.Sc. Microbiology",
+    "Name": "Master of Science Microbiology"
+  },
+  {
+    "Id": 138,
+    "Code": "M.Sc. NanoSci and Tech",
+    "Name": "Master of Science Nanoscience and Technology"
+  },
+  {
+    "Id": 139,
+    "Code": "M.Sc. Physics",
+    "Name": "Master of Science Physics"
+  },
+  {
+    "Id": 140,
+    "Code": "M.Sc. Stats",
+    "Name": "Master of Science Statistics"
+  },
+  {
+    "Id": 141,
+    "Code": "M.Sc. Stats with CA",
+    "Name": "Master of Science Statistics with Computer Applications"
+  },
+  {
+    "Id": 142,
+    "Code": "M.Sc. T.S and A.D",
+    "Name": "Master of Science Textiles Science and Apparel Design"
+  },
+  {
+    "Id": 143,
+    "Code": "M.Sc. Zoology",
+    "Name": "Master of Science Zoology"
+  }
+]
