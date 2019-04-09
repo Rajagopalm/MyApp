@@ -17,17 +17,25 @@ import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
 import { MemberListComponent } from './members/member-list/member-list.component';
+import { StudentListComponent } from './students/student-list/student-list.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import { AuthGuard } from './_guards/auth.guard';
 import { UserService } from './_services/user.service';
+import { StudentService } from './_services/student.service';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
+import { StudentCardComponent } from './students/student-card/student-card.component';
+import { StudentDetailComponent } from './students/student-detail/student-detail.component';
+import { StudentDetailResolver } from './_resolvers/student-detail.resolver';
+import { StudentListResolver } from './_resolvers/student-list.resolver';
+import { StudentEditComponent } from './students/student-edit/student-edit.component';
+import { StudentEditResolver } from './_resolvers/student-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
@@ -56,6 +64,10 @@ export function tokenGetter() {
     MemberCardComponent,
     MemberDetailComponent,
     MemberEditComponent,
+    StudentListComponent,
+    StudentCardComponent,
+    StudentDetailComponent,
+    StudentEditComponent,
     PhotoEditorComponent,
     TimeAgoPipe,
     MemberMessagesComponent,
@@ -96,6 +108,9 @@ export function tokenGetter() {
       MemberDetailResolver,
       MemberListResolver,
       MemberEditResolver,
+      StudentDetailResolver,
+      StudentListResolver,
+      StudentEditResolver,
       PreventUnsavedChanges,
       ListsResolver,
       MessagesResolver,
