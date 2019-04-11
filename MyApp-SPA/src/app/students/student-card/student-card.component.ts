@@ -11,7 +11,7 @@ import { AlertifyService } from '../../_services/alertify.service';
 })
 
 export class StudentCardComponent implements OnInit {
-  @Input() user: Student;
+  @Input() student: Student;
 
   constructor(private authService: AuthService, private studentService: StudentService, private alertify: AlertifyService) { }
 

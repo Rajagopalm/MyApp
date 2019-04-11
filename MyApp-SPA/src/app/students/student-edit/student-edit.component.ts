@@ -41,8 +41,4 @@ export class StudentEditComponent implements OnInit {
         this.alertify.error(error);
       });
     }
-
-    updateMainPhoto(photoUrl) {
-      this.student.photoUrl = photoUrl;
-    }
   }

@@ -16,7 +16,7 @@ export class StudentService {
 
   constructor(private http: HttpClient) {}
 
-  getStudents(page?, itemsPerPage?, studentParams?, likesParam?): Observable<PaginatedResult<Student[]>> {
+  getStudents(page?, itemsPerPage?, studentParams?): Observable<PaginatedResult<Student[]>> {
     const paginatedResult: PaginatedResult<Student[]> = new PaginatedResult<Student[]>();
 
     let params = new HttpParams();
@@ -26,10 +26,10 @@ export class StudentService {
       params = params.append('pageSize', itemsPerPage);
     }
 
-    if (studentParams != null) {
+     if (studentParams != null) {
       params = params.append('gender', studentParams.gender);
-      params = params.append('orderBy', studentParams.orderBy);
-    }
+    //  params = params.append('orderBy', studentParams.orderBy);
+     }
 
     return this.http.get<Student[]>(this.baseUrl + 'students', { observe: 'response', params})
       .pipe(

@@ -26,10 +26,8 @@ export class StudentListComponent implements OnInit {
       this.pagination = data['students'].pagination;
     });
 
-    this.studentParams.gender = this.student.gender === 'female' ? 'male' : 'female';
-    this.studentParams.minAge = 18;
-    this.studentParams.maxAge = 99;
-    this.studentParams.orderBy = 'lastActive';
+    // this.studentParams.gender =  'male';
+    // this.studentParams.orderBy = 'lastActive';
   }
 
   pageChanged(event: any): void {
@@ -38,9 +36,7 @@ export class StudentListComponent implements OnInit {
   }
 
   resetFilters() {
-    this.studentParams.gender = this.student.gender === 'female' ? 'male' : 'female';
-    this.studentParams.minAge = 18;
-    this.studentParams.maxAge = 99;
+    // this.studentParams.gender = 'male';
     this.loadStudents();
   }
 
