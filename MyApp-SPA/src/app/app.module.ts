@@ -7,7 +7,8 @@ import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
-import {TimeAgoPipe} from 'time-ago-pipe';
+import { TimeAgoPipe} from 'time-ago-pipe';
+import { SharedModule } from './_shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -48,6 +49,7 @@ import { PhotoManagementComponent } from './admin/photo-management/photo-managem
 import { AdminService } from './_services/admin.service';
 import { RolesModalComponent } from './admin/roles-modal/roles-modal.component';
 
+
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -81,6 +83,7 @@ export function tokenGetter() {
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    SharedModule,
     ReactiveFormsModule,
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),

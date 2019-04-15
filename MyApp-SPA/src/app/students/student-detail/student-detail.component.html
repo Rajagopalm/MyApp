@@ -1,3 +1,182 @@
-<p>
-  student-detail works!
-</p>
+<div class="container mt-4">
+  <div class="row">
+    <h1>{{student.firstName}}'s Profile</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+
+        <div class="card-body">
+          <div>
+            <strong>Full Name:</strong>
+            <p>{{student.firstName}}, {{student.lastName}}</p>
+          </div>
+          <div>
+            <strong>Father Name:</strong>
+            <p>{{student.fatherName}}</p>
+          </div>
+          <div>
+            <strong>Gender:</strong>
+            <p>{{student.gender}}</p>
+          </div>
+           <div>
+            <strong>Date of Birth </strong>
+            <p>{{student.dateOfBirth | date: 'mediumDate'}}</p>
+          </div>
+          <div>
+            <strong>Father Name:</strong>
+            <p>{{student.bloodGroup}}</p>
+          </div>
+          <div>
+            <strong>religion:</strong>
+            <p>{{student.religion}}</p>
+          </div>
+           <div>
+            <strong>caste </strong>
+            <p>{{student.caste}}</p>
+          </div>
+          <div>
+          <strong>motherTongue:</strong>
+          <p>{{student.motherTongue}}</p>
+          </div>
+          <div>
+          <strong>nationality:</strong>
+          <p>{{student.nationality}}</p>
+          </div>
+          <div>
+          <strong>firstAdmissionYear </strong>
+          <p>{{student.firstAdmissionYear}}</p>
+          </div>
+          <div>
+          <strong>emailId:</strong>
+          <p>{{student.emailId}}</p>
+          </div>
+          <div>
+          <strong>currentAddress </strong>
+          <p>{{student.currentAddress}}</p>
+          </div>
+          <div>
+          <strong>currentCity:</strong>
+          <p>{{student.currentCity}}</p>
+          </div>
+          <div>
+            <strong>currentCityId:</strong>
+            <p>{{student.currentCityId}}</p>
+          </div>
+          <div>
+            <strong>currentDistrict </strong>
+            <p>{{student.currentDistrict}}</p>
+          </div>
+          <div>
+            <strong>currentDistrictId </strong>
+            <p>{{student.currentDistrictId}}</p>
+            </div>
+            <div>
+            <strong>pinCode:</strong>
+            <p>{{student.pinCode}}</p>
+            </div>
+            <div>
+            <strong>phoneWithStdCode </strong>
+            <p>{{student.phoneWithStdCode}}</p>
+            </div>
+            <div>
+            <strong>mobileNumber1:</strong>
+            <p>{{student.mobileNumber1}}</p>
+            </div>
+            <div>
+              <strong>mobileNumber2:</strong>
+              <p>{{student.mobileNumber2}}</p>
+            </div>
+            <div>
+              <strong>placeOfBirth </strong>
+              <p>{{student.placeOfBirth}}</p>
+            </div>
+            <div>
+              <strong>stateOfBirth:</strong>
+              <p>{{student.stateOfBirth}}</p>
+            </div>
+            <div>
+              <strong>countryOfBirth:</strong>
+              <p>{{student.countryOfBirth}}</p>
+            </div>
+            <div>
+              <strong>disabilityType </strong>
+              <p>{{student.disabilityType}}</p>
+            </div>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group d-flex">
+            <button class="btn btn-primary w-100">Like</button>
+            <button class="btn btn-success w-100" (click)="selectTab(3)">Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="tab-panel">
+        <tabset class="member-tabset" #studentTabs>
+          <tab heading="About {{student.firstName}}">
+            <h4>Description</h4>
+            <p>{{student.firstName}}</p>
+            <h4>Looking For</h4>
+            <p>{{student.firstName}}</p>
+          </tab>
+          <tab heading="Interests">
+            <h4>Interests</h4>
+            <p>{{student.firstName}}</p>
+          </tab>
+          <tab heading="Enrollments">
+              <h4>Enrollments</h4>
+
+                <div>
+                  <ul class="list-group">
+                  <li *ngIf="student.studentEnrollments && student.studentEnrollments.length > 0" class="list-group-item">
+                    <dl>
+                      <dd>
+                        <div *ngFor="let studentEnrollment of student.studentEnrollments">
+                          <h4>
+                            <span class="label label-default">
+                                CollegeName - {{studentEnrollment.collegeName}}
+                            </span>
+                          </h4>
+                          <div class="caption" *ngIf="studentEnrollment.courseName">
+                            <p class="text-justify">{{studentEnrollment.courseName}}</p>
+                            <p class="text-justify">{{studentEnrollment.enrollmentYear}}</p>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  </ul>
+                </div>
+
+          </tab>
+        </tabset>
+      </div>
+      <p></p>
+      <div>
+        <ul class="list-group">
+        <li *ngIf="student.studentEnrollments && student.studentEnrollments.length > 0" class="list-group-item">
+          <dl>
+            <dd>
+              <div *ngFor="let studentEnrollment of student.studentEnrollments">
+                <h4>
+                  <span class="label label-default">
+                      CollegeName - {{studentEnrollment.collegeName}}
+                  </span>
+                </h4>
+                <div class="caption" *ngIf="studentEnrollment.courseName">
+                  <p class="text-justify">{{studentEnrollment.courseName}}</p>
+                  <p class="text-justify">{{studentEnrollment.enrollmentYear}}</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -4,6 +4,8 @@ import { StudentService } from '../../_services/student.service';
 import { AlertifyService } from '../../_services/alertify.service';
 import { ActivatedRoute } from '../../../../node_modules/@angular/router';
 import { Pagination, PaginatedResult } from '../../_models/pagination';
+import { Sorter } from './../../_services/sorter';
+import { CapitalizePipe } from './../../_shared/pipes/capitalize.pipe';
 
 @Component({
   selector: 'app-student-list',
@@ -16,6 +18,7 @@ export class StudentListComponent implements OnInit {
   genderList = [{value: 'male', display: 'Males'}, {value: 'female', display: 'Females'}];
   studentParams: any = {};
   pagination: Pagination;
+  sorter: any;
 
   constructor(private studentService: StudentService, private alertify: AlertifyService,
     private route: ActivatedRoute) { }
@@ -25,6 +28,7 @@ export class StudentListComponent implements OnInit {
       this.students = data['students'].result;
       this.pagination = data['students'].pagination;
     });
+
 
     // this.studentParams.gender =  'male';
     // this.studentParams.orderBy = 'lastActive';
@@ -48,6 +52,10 @@ export class StudentListComponent implements OnInit {
     }, error => {
       this.alertify.error(error);
     });
+  }
+
+  sort(prop: string) {
+    this.sorter.sort(this.students, prop);
   }
 
 }
