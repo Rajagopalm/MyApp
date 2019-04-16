@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
+import { DataFilterService } from './_services/data-filter.service';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { StudentListComponent } from './students/student-list/student-list.component';
 import { ListsComponent } from './lists/lists.component';
@@ -33,6 +34,7 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { StudentCardComponent } from './students/student-card/student-card.component';
 import { StudentDetailComponent } from './students/student-detail/student-detail.component';
+import { StudentGridComponent } from './students/student-list/student-grid.component';
 import { StudentDetailResolver } from './_resolvers/student-detail.resolver';
 import { StudentListResolver } from './_resolvers/student-list.resolver';
 import { StudentEditComponent } from './students/student-edit/student-edit.component';
@@ -48,6 +50,7 @@ import { UserManagementComponent } from './admin/user-management/user-management
 import { PhotoManagementComponent } from './admin/photo-management/photo-management.component';
 import { AdminService } from './_services/admin.service';
 import { RolesModalComponent } from './admin/roles-modal/roles-modal.component';
+import { Sorter } from './_services/sorter';
 
 
 export function tokenGetter() {
@@ -67,6 +70,7 @@ export function tokenGetter() {
     MemberDetailComponent,
     MemberEditComponent,
     StudentListComponent,
+    StudentGridComponent,
     StudentCardComponent,
     StudentDetailComponent,
     StudentEditComponent,
@@ -106,6 +110,8 @@ export function tokenGetter() {
       AuthService,
       ErrorInterceptorProvider,
       AlertifyService,
+      DataFilterService,
+      Sorter,
       AuthGuard,
       UserService,
       MemberDetailResolver,

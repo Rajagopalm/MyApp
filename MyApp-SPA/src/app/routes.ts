@@ -1,7 +1,8 @@
-import {Routes} from '@angular/router';
+import { Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { StudentListComponent } from './students/student-list/student-list.component';
+import { StudentGridComponent } from './students/student-list/student-grid.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ListsComponent } from './lists/lists.component';
 import { AuthGuard } from './_guards/auth.guard';

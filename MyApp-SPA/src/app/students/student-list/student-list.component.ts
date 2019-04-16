@@ -6,6 +6,7 @@ import { ActivatedRoute } from '../../../../node_modules/@angular/router';
 import { Pagination, PaginatedResult } from '../../_models/pagination';
 import { Sorter } from './../../_services/sorter';
 import { CapitalizePipe } from './../../_shared/pipes/capitalize.pipe';
+import { DataFilterService } from '../../_services/data-filter.service';
 
 @Component({
   selector: 'app-student-list',
@@ -18,14 +19,14 @@ export class StudentListComponent implements OnInit {
   genderList = [{value: 'male', display: 'Males'}, {value: 'female', display: 'Females'}];
   studentParams: any = {};
   pagination: Pagination;
-  sorter: any;
+  filteredStudents: Student[] = [];
 
   constructor(private studentService: StudentService, private alertify: AlertifyService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute, private dataFilter: DataFilterService) { }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
-      this.students = data['students'].result;
+      this.students = this.filteredStudents =  data['students'].result;
       this.pagination = data['students'].pagination;
     });
 
@@ -44,18 +45,23 @@ export class StudentListComponent implements OnInit {
     this.loadStudents();
   }
 
+  filterChanged(filterText: string) {
+    if (filterText && this.students) {
+        let props = ['firstName', 'lastName', 'dateOfBirth', 'currentCity', 'fatherName', 'gender'];
+        this.filteredStudents = this.dataFilter.filter(this.students, props, filterText);
+    } else {
+      this.filteredStudents = this.students;
+    }
+  }
+
   loadStudents() {
     this.studentService.getStudents(this.pagination.currentPage, this.pagination.itemsPerPage, this.studentParams)
       .subscribe((res: PaginatedResult<Student[]>) => {
-        this.students = res.result;
+        this.students = this.filteredStudents = res.result;
         this.pagination = res.pagination;
     }, error => {
       this.alertify.error(error);
     });
-  }
-
-  sort(prop: string) {
-    this.sorter.sort(this.students, prop);
   }
 
 }

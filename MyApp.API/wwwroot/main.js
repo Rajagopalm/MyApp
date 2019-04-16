@@ -512,6 +512,31 @@ var MessagesResolver = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/_resolvers/property-resolver.ts":
+/*!*************************************************!*\
+  !*** ./src/app/_resolvers/property-resolver.ts ***!
+  \*************************************************/
+/*! exports provided: propertyResolver */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "propertyResolver", function() { return propertyResolver; });
+var propertyResolver = /** @class */ (function () {
+    function propertyResolver() {
+    }
+    propertyResolver.resolve = function (path, obj) {
+        return path.split('.').reduce(function (prev, curr) {
+            return (prev ? prev[curr] : undefined);
+        }, obj || self);
+    };
+    return propertyResolver;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/_resolvers/student-detail.resolver.ts":
 /*!*******************************************************!*\
   !*** ./src/app/_resolvers/student-detail.resolver.ts ***!
@@ -889,6 +914,72 @@ var AuthService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/_services/data-filter.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/_services/data-filter.service.ts ***!
+  \**************************************************/
+/*! exports provided: DataFilterService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataFilterService", function() { return DataFilterService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _resolvers_property_resolver__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_resolvers/property-resolver */ "./src/app/_resolvers/property-resolver.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var DataFilterService = /** @class */ (function () {
+    function DataFilterService() {
+    }
+    DataFilterService.prototype.filter = function (datasource, filterProperties, filterData) {
+        if (datasource && filterProperties && filterData) {
+            filterData = filterData.toUpperCase();
+            var filtered = datasource.filter(function (item) {
+                var match = false;
+                for (var _i = 0, filterProperties_1 = filterProperties; _i < filterProperties_1.length; _i++) {
+                    var prop = filterProperties_1[_i];
+                    var propVal = '';
+                    // Account for nested properties like 'state.name'
+                    if (prop.indexOf('.') > -1) {
+                        propVal = _resolvers_property_resolver__WEBPACK_IMPORTED_MODULE_1__["propertyResolver"].resolve(prop, item);
+                        if (propVal) {
+                            propVal = propVal.toString().toUpperCase();
+                        }
+                    }
+                    else {
+                        if (item[prop]) {
+                            propVal = item[prop].toString().toUpperCase();
+                        }
+                    }
+                    if (propVal.indexOf(filterData) > -1) {
+                        match = true;
+                        break;
+                    }
+                }
+                return match;
+            });
+            return filtered;
+        }
+        else {
+            return datasource;
+        }
+    };
+    DataFilterService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])()
+    ], DataFilterService);
+    return DataFilterService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/_services/error.interceptor.ts":
 /*!************************************************!*\
   !*** ./src/app/_services/error.interceptor.ts ***!
@@ -956,6 +1047,76 @@ var ErrorInterceptorProvider = {
 
 /***/ }),
 
+/***/ "./src/app/_services/sorter.ts":
+/*!*************************************!*\
+  !*** ./src/app/_services/sorter.ts ***!
+  \*************************************/
+/*! exports provided: Sorter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sorter", function() { return Sorter; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _resolvers_property_resolver__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_resolvers/property-resolver */ "./src/app/_resolvers/property-resolver.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var Sorter = /** @class */ (function () {
+    function Sorter() {
+        this.property = null;
+        this.direction = 1;
+    }
+    Sorter.prototype.sort = function (collection, prop) {
+        var _this = this;
+        this.property = prop;
+        this.direction = (this.property === prop) ? this.direction * -1 : 1;
+        collection.sort(function (a, b) {
+            var aVal;
+            var bVal;
+            //Handle resolving complex properties such as 'state.name' for prop value
+            if (prop && prop.indexOf('.') > -1) {
+                aVal = _resolvers_property_resolver__WEBPACK_IMPORTED_MODULE_1__["propertyResolver"].resolve(prop, a);
+                bVal = _resolvers_property_resolver__WEBPACK_IMPORTED_MODULE_1__["propertyResolver"].resolve(prop, b);
+            }
+            else {
+                aVal = a[prop];
+                bVal = b[prop];
+            }
+            //Fix issues that spaces before/after string value can cause such as ' San Francisco'
+            if (_this.isString(aVal))
+                aVal = aVal.trim().toUpperCase();
+            if (_this.isString(bVal))
+                bVal = bVal.trim().toUpperCase();
+            if (aVal === bVal) {
+                return 0;
+            }
+            else if (aVal > bVal) {
+                return _this.direction * -1;
+            }
+            else {
+                return _this.direction * 1;
+            }
+        });
+    };
+    Sorter.prototype.isString = function (val) {
+        return (val && (typeof val === 'string' || val instanceof String));
+    };
+    Sorter = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])()
+    ], Sorter);
+    return Sorter;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/_services/student.service.ts":
 /*!**********************************************!*\
   !*** ./src/app/_services/student.service.ts ***!
@@ -970,7 +1131,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _models_pagination__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../_models/pagination */ "./src/app/_models/pagination.ts");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -980,6 +1142,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1002,7 +1165,7 @@ var StudentService = /** @class */ (function () {
             //  params = params.append('orderBy', studentParams.orderBy);
         }
         return this.http.get(this.baseUrl + 'students', { observe: 'response', params: params })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (response) {
             paginatedResult.result = response.body;
             if (response.headers.get('Pagination') != null) {
                 paginatedResult.pagination = JSON.parse(response.headers.get('Pagination'));
@@ -1013,8 +1176,32 @@ var StudentService = /** @class */ (function () {
     StudentService.prototype.getStudent = function (id) {
         return this.http.get(this.baseUrl + 'students/' + id);
     };
-    StudentService.prototype.updateStudent = function (id, student) {
-        return this.http.put(this.baseUrl + 'students/' + id, student);
+    StudentService.prototype.updateStudent = function (student) {
+        return this.http.put(this.baseUrl + 'students/' + student.id, student);
+    };
+    StudentService.prototype.insertStudent = function (student) {
+        return this.http.post(this.baseUrl + 'students/', student)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (data) {
+            console.log('insertStudent status: ' + data.status);
+            return data.student;
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["catchError"])(this.handleError));
+    };
+    StudentService.prototype.deleteStudent = function (student) {
+        return this.http.delete(this.baseUrl + '/' + student.id)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["catchError"])(this.handleError));
+    };
+    StudentService.prototype.getCities = function () {
+        return this.http.get(this.baseUrl + 'subdistricts/');
+    };
+    StudentService.prototype.handleError = function (error) {
+        console.error('server error:', error);
+        if (error.error instanceof Error) {
+            var errMessage = error.error.message;
+            return rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"].throw(errMessage);
+            // Use the following instead if using lite-server
+            // return Observable.throw(err.text() || 'backend server error');
+        }
+        return rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"].throw(error || 'ASP.NET Core server error');
     };
     StudentService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1780,42 +1967,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
 /* harmony import */ var _services_error_interceptor__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./_services/error.interceptor */ "./src/app/_services/error.interceptor.ts");
 /* harmony import */ var _services_alertify_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./_services/alertify.service */ "./src/app/_services/alertify.service.ts");
-/* harmony import */ var _members_member_list_member_list_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./members/member-list/member-list.component */ "./src/app/members/member-list/member-list.component.ts");
-/* harmony import */ var _students_student_list_student_list_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./students/student-list/student-list.component */ "./src/app/students/student-list/student-list.component.ts");
-/* harmony import */ var _lists_lists_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./lists/lists.component */ "./src/app/lists/lists.component.ts");
-/* harmony import */ var _messages_messages_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./messages/messages.component */ "./src/app/messages/messages.component.ts");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./routes */ "./src/app/routes.ts");
-/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./_guards/auth.guard */ "./src/app/_guards/auth.guard.ts");
-/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./_services/user.service */ "./src/app/_services/user.service.ts");
-/* harmony import */ var _members_member_card_member_card_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./members/member-card/member-card.component */ "./src/app/members/member-card/member-card.component.ts");
-/* harmony import */ var _members_member_detail_member_detail_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./members/member-detail/member-detail.component */ "./src/app/members/member-detail/member-detail.component.ts");
-/* harmony import */ var _resolvers_member_detail_resolver__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./_resolvers/member-detail.resolver */ "./src/app/_resolvers/member-detail.resolver.ts");
-/* harmony import */ var _resolvers_member_list_resolver__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./_resolvers/member-list.resolver */ "./src/app/_resolvers/member-list.resolver.ts");
-/* harmony import */ var _members_member_edit_member_edit_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./members/member-edit/member-edit.component */ "./src/app/members/member-edit/member-edit.component.ts");
-/* harmony import */ var _resolvers_member_edit_resolver__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./_resolvers/member-edit.resolver */ "./src/app/_resolvers/member-edit.resolver.ts");
-/* harmony import */ var _students_student_card_student_card_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./students/student-card/student-card.component */ "./src/app/students/student-card/student-card.component.ts");
-/* harmony import */ var _students_student_detail_student_detail_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./students/student-detail/student-detail.component */ "./src/app/students/student-detail/student-detail.component.ts");
-/* harmony import */ var _resolvers_student_detail_resolver__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./_resolvers/student-detail.resolver */ "./src/app/_resolvers/student-detail.resolver.ts");
-/* harmony import */ var _resolvers_student_list_resolver__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./_resolvers/student-list.resolver */ "./src/app/_resolvers/student-list.resolver.ts");
-/* harmony import */ var _students_student_edit_student_edit_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./students/student-edit/student-edit.component */ "./src/app/students/student-edit/student-edit.component.ts");
-/* harmony import */ var _resolvers_student_edit_resolver__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./_resolvers/student-edit.resolver */ "./src/app/_resolvers/student-edit.resolver.ts");
-/* harmony import */ var _guards_prevent_unsaved_changes_guard__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./_guards/prevent-unsaved-changes.guard */ "./src/app/_guards/prevent-unsaved-changes.guard.ts");
-/* harmony import */ var _members_photo_editor_photo_editor_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./members/photo-editor/photo-editor.component */ "./src/app/members/photo-editor/photo-editor.component.ts");
-/* harmony import */ var _resolvers_lists_resolver__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./_resolvers/lists.resolver */ "./src/app/_resolvers/lists.resolver.ts");
-/* harmony import */ var _resolvers_messages_resolver__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./_resolvers/messages.resolver */ "./src/app/_resolvers/messages.resolver.ts");
-/* harmony import */ var _members_member_messages_member_messages_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./members/member-messages/member-messages.component */ "./src/app/members/member-messages/member-messages.component.ts");
-/* harmony import */ var _admin_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./admin/admin-panel/admin-panel.component */ "./src/app/admin/admin-panel/admin-panel.component.ts");
-/* harmony import */ var _directives_hasRole_directive__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./_directives/hasRole.directive */ "./src/app/_directives/hasRole.directive.ts");
-/* harmony import */ var _admin_user_management_user_management_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./admin/user-management/user-management.component */ "./src/app/admin/user-management/user-management.component.ts");
-/* harmony import */ var _admin_photo_management_photo_management_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./admin/photo-management/photo-management.component */ "./src/app/admin/photo-management/photo-management.component.ts");
-/* harmony import */ var _services_admin_service__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./_services/admin.service */ "./src/app/_services/admin.service.ts");
-/* harmony import */ var _admin_roles_modal_roles_modal_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./admin/roles-modal/roles-modal.component */ "./src/app/admin/roles-modal/roles-modal.component.ts");
+/* harmony import */ var _services_data_filter_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./_services/data-filter.service */ "./src/app/_services/data-filter.service.ts");
+/* harmony import */ var _members_member_list_member_list_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./members/member-list/member-list.component */ "./src/app/members/member-list/member-list.component.ts");
+/* harmony import */ var _students_student_list_student_list_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./students/student-list/student-list.component */ "./src/app/students/student-list/student-list.component.ts");
+/* harmony import */ var _lists_lists_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./lists/lists.component */ "./src/app/lists/lists.component.ts");
+/* harmony import */ var _messages_messages_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./messages/messages.component */ "./src/app/messages/messages.component.ts");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./routes */ "./src/app/routes.ts");
+/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./_guards/auth.guard */ "./src/app/_guards/auth.guard.ts");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./_services/user.service */ "./src/app/_services/user.service.ts");
+/* harmony import */ var _members_member_card_member_card_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./members/member-card/member-card.component */ "./src/app/members/member-card/member-card.component.ts");
+/* harmony import */ var _members_member_detail_member_detail_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./members/member-detail/member-detail.component */ "./src/app/members/member-detail/member-detail.component.ts");
+/* harmony import */ var _resolvers_member_detail_resolver__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./_resolvers/member-detail.resolver */ "./src/app/_resolvers/member-detail.resolver.ts");
+/* harmony import */ var _resolvers_member_list_resolver__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./_resolvers/member-list.resolver */ "./src/app/_resolvers/member-list.resolver.ts");
+/* harmony import */ var _members_member_edit_member_edit_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./members/member-edit/member-edit.component */ "./src/app/members/member-edit/member-edit.component.ts");
+/* harmony import */ var _resolvers_member_edit_resolver__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./_resolvers/member-edit.resolver */ "./src/app/_resolvers/member-edit.resolver.ts");
+/* harmony import */ var _students_student_card_student_card_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./students/student-card/student-card.component */ "./src/app/students/student-card/student-card.component.ts");
+/* harmony import */ var _students_student_detail_student_detail_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./students/student-detail/student-detail.component */ "./src/app/students/student-detail/student-detail.component.ts");
+/* harmony import */ var _students_student_list_student_grid_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./students/student-list/student-grid.component */ "./src/app/students/student-list/student-grid.component.ts");
+/* harmony import */ var _resolvers_student_detail_resolver__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./_resolvers/student-detail.resolver */ "./src/app/_resolvers/student-detail.resolver.ts");
+/* harmony import */ var _resolvers_student_list_resolver__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./_resolvers/student-list.resolver */ "./src/app/_resolvers/student-list.resolver.ts");
+/* harmony import */ var _students_student_edit_student_edit_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./students/student-edit/student-edit.component */ "./src/app/students/student-edit/student-edit.component.ts");
+/* harmony import */ var _resolvers_student_edit_resolver__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./_resolvers/student-edit.resolver */ "./src/app/_resolvers/student-edit.resolver.ts");
+/* harmony import */ var _guards_prevent_unsaved_changes_guard__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./_guards/prevent-unsaved-changes.guard */ "./src/app/_guards/prevent-unsaved-changes.guard.ts");
+/* harmony import */ var _members_photo_editor_photo_editor_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./members/photo-editor/photo-editor.component */ "./src/app/members/photo-editor/photo-editor.component.ts");
+/* harmony import */ var _resolvers_lists_resolver__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./_resolvers/lists.resolver */ "./src/app/_resolvers/lists.resolver.ts");
+/* harmony import */ var _resolvers_messages_resolver__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./_resolvers/messages.resolver */ "./src/app/_resolvers/messages.resolver.ts");
+/* harmony import */ var _members_member_messages_member_messages_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./members/member-messages/member-messages.component */ "./src/app/members/member-messages/member-messages.component.ts");
+/* harmony import */ var _admin_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./admin/admin-panel/admin-panel.component */ "./src/app/admin/admin-panel/admin-panel.component.ts");
+/* harmony import */ var _directives_hasRole_directive__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./_directives/hasRole.directive */ "./src/app/_directives/hasRole.directive.ts");
+/* harmony import */ var _admin_user_management_user_management_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./admin/user-management/user-management.component */ "./src/app/admin/user-management/user-management.component.ts");
+/* harmony import */ var _admin_photo_management_photo_management_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./admin/photo-management/photo-management.component */ "./src/app/admin/photo-management/photo-management.component.ts");
+/* harmony import */ var _services_admin_service__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./_services/admin.service */ "./src/app/_services/admin.service.ts");
+/* harmony import */ var _admin_roles_modal_roles_modal_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./admin/roles-modal/roles-modal.component */ "./src/app/admin/roles-modal/roles-modal.component.ts");
+/* harmony import */ var _services_sorter__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./_services/sorter */ "./src/app/_services/sorter.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -1877,24 +2070,25 @@ var AppModule = /** @class */ (function () {
                 _nav_nav_component__WEBPACK_IMPORTED_MODULE_12__["NavComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
                 _register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"],
-                _members_member_list_member_list_component__WEBPACK_IMPORTED_MODULE_18__["MemberListComponent"],
-                _lists_lists_component__WEBPACK_IMPORTED_MODULE_20__["ListsComponent"],
-                _messages_messages_component__WEBPACK_IMPORTED_MODULE_21__["MessagesComponent"],
-                _members_member_card_member_card_component__WEBPACK_IMPORTED_MODULE_25__["MemberCardComponent"],
-                _members_member_detail_member_detail_component__WEBPACK_IMPORTED_MODULE_26__["MemberDetailComponent"],
-                _members_member_edit_member_edit_component__WEBPACK_IMPORTED_MODULE_29__["MemberEditComponent"],
-                _students_student_list_student_list_component__WEBPACK_IMPORTED_MODULE_19__["StudentListComponent"],
-                _students_student_card_student_card_component__WEBPACK_IMPORTED_MODULE_31__["StudentCardComponent"],
-                _students_student_detail_student_detail_component__WEBPACK_IMPORTED_MODULE_32__["StudentDetailComponent"],
-                _students_student_edit_student_edit_component__WEBPACK_IMPORTED_MODULE_35__["StudentEditComponent"],
-                _members_photo_editor_photo_editor_component__WEBPACK_IMPORTED_MODULE_38__["PhotoEditorComponent"],
+                _members_member_list_member_list_component__WEBPACK_IMPORTED_MODULE_19__["MemberListComponent"],
+                _lists_lists_component__WEBPACK_IMPORTED_MODULE_21__["ListsComponent"],
+                _messages_messages_component__WEBPACK_IMPORTED_MODULE_22__["MessagesComponent"],
+                _members_member_card_member_card_component__WEBPACK_IMPORTED_MODULE_26__["MemberCardComponent"],
+                _members_member_detail_member_detail_component__WEBPACK_IMPORTED_MODULE_27__["MemberDetailComponent"],
+                _members_member_edit_member_edit_component__WEBPACK_IMPORTED_MODULE_30__["MemberEditComponent"],
+                _students_student_list_student_list_component__WEBPACK_IMPORTED_MODULE_20__["StudentListComponent"],
+                _students_student_list_student_grid_component__WEBPACK_IMPORTED_MODULE_34__["StudentGridComponent"],
+                _students_student_card_student_card_component__WEBPACK_IMPORTED_MODULE_32__["StudentCardComponent"],
+                _students_student_detail_student_detail_component__WEBPACK_IMPORTED_MODULE_33__["StudentDetailComponent"],
+                _students_student_edit_student_edit_component__WEBPACK_IMPORTED_MODULE_37__["StudentEditComponent"],
+                _members_photo_editor_photo_editor_component__WEBPACK_IMPORTED_MODULE_40__["PhotoEditorComponent"],
                 time_ago_pipe__WEBPACK_IMPORTED_MODULE_9__["TimeAgoPipe"],
-                _members_member_messages_member_messages_component__WEBPACK_IMPORTED_MODULE_41__["MemberMessagesComponent"],
-                _admin_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_42__["AdminPanelComponent"],
-                _directives_hasRole_directive__WEBPACK_IMPORTED_MODULE_43__["HasRoleDirective"],
-                _admin_user_management_user_management_component__WEBPACK_IMPORTED_MODULE_44__["UserManagementComponent"],
-                _admin_photo_management_photo_management_component__WEBPACK_IMPORTED_MODULE_45__["PhotoManagementComponent"],
-                _admin_roles_modal_roles_modal_component__WEBPACK_IMPORTED_MODULE_47__["RolesModalComponent"]
+                _members_member_messages_member_messages_component__WEBPACK_IMPORTED_MODULE_43__["MemberMessagesComponent"],
+                _admin_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_44__["AdminPanelComponent"],
+                _directives_hasRole_directive__WEBPACK_IMPORTED_MODULE_45__["HasRoleDirective"],
+                _admin_user_management_user_management_component__WEBPACK_IMPORTED_MODULE_46__["UserManagementComponent"],
+                _admin_photo_management_photo_management_component__WEBPACK_IMPORTED_MODULE_47__["PhotoManagementComponent"],
+                _admin_roles_modal_roles_modal_component__WEBPACK_IMPORTED_MODULE_49__["RolesModalComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1907,7 +2101,7 @@ var AppModule = /** @class */ (function () {
                 ngx_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ButtonsModule"].forRoot(),
                 ngx_bootstrap__WEBPACK_IMPORTED_MODULE_4__["PaginationModule"].forRoot(),
                 ngx_bootstrap__WEBPACK_IMPORTED_MODULE_4__["TabsModule"].forRoot(),
-                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot(_routes__WEBPACK_IMPORTED_MODULE_22__["appRoutes"]),
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot(_routes__WEBPACK_IMPORTED_MODULE_23__["appRoutes"]),
                 ngx_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ModalModule"].forRoot(),
                 ngx_gallery__WEBPACK_IMPORTED_MODULE_7__["NgxGalleryModule"],
                 ng2_file_upload__WEBPACK_IMPORTED_MODULE_8__["FileUploadModule"],
@@ -1923,21 +2117,23 @@ var AppModule = /** @class */ (function () {
                 _services_auth_service__WEBPACK_IMPORTED_MODULE_13__["AuthService"],
                 _services_error_interceptor__WEBPACK_IMPORTED_MODULE_16__["ErrorInterceptorProvider"],
                 _services_alertify_service__WEBPACK_IMPORTED_MODULE_17__["AlertifyService"],
-                _guards_auth_guard__WEBPACK_IMPORTED_MODULE_23__["AuthGuard"],
-                _services_user_service__WEBPACK_IMPORTED_MODULE_24__["UserService"],
-                _resolvers_member_detail_resolver__WEBPACK_IMPORTED_MODULE_27__["MemberDetailResolver"],
-                _resolvers_member_list_resolver__WEBPACK_IMPORTED_MODULE_28__["MemberListResolver"],
-                _resolvers_member_edit_resolver__WEBPACK_IMPORTED_MODULE_30__["MemberEditResolver"],
-                _resolvers_student_detail_resolver__WEBPACK_IMPORTED_MODULE_33__["StudentDetailResolver"],
-                _resolvers_student_list_resolver__WEBPACK_IMPORTED_MODULE_34__["StudentListResolver"],
-                _resolvers_student_edit_resolver__WEBPACK_IMPORTED_MODULE_36__["StudentEditResolver"],
-                _guards_prevent_unsaved_changes_guard__WEBPACK_IMPORTED_MODULE_37__["PreventUnsavedChanges"],
-                _resolvers_lists_resolver__WEBPACK_IMPORTED_MODULE_39__["ListsResolver"],
-                _resolvers_messages_resolver__WEBPACK_IMPORTED_MODULE_40__["MessagesResolver"],
-                _services_admin_service__WEBPACK_IMPORTED_MODULE_46__["AdminService"]
+                _services_data_filter_service__WEBPACK_IMPORTED_MODULE_18__["DataFilterService"],
+                _services_sorter__WEBPACK_IMPORTED_MODULE_50__["Sorter"],
+                _guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"],
+                _services_user_service__WEBPACK_IMPORTED_MODULE_25__["UserService"],
+                _resolvers_member_detail_resolver__WEBPACK_IMPORTED_MODULE_28__["MemberDetailResolver"],
+                _resolvers_member_list_resolver__WEBPACK_IMPORTED_MODULE_29__["MemberListResolver"],
+                _resolvers_member_edit_resolver__WEBPACK_IMPORTED_MODULE_31__["MemberEditResolver"],
+                _resolvers_student_detail_resolver__WEBPACK_IMPORTED_MODULE_35__["StudentDetailResolver"],
+                _resolvers_student_list_resolver__WEBPACK_IMPORTED_MODULE_36__["StudentListResolver"],
+                _resolvers_student_edit_resolver__WEBPACK_IMPORTED_MODULE_38__["StudentEditResolver"],
+                _guards_prevent_unsaved_changes_guard__WEBPACK_IMPORTED_MODULE_39__["PreventUnsavedChanges"],
+                _resolvers_lists_resolver__WEBPACK_IMPORTED_MODULE_41__["ListsResolver"],
+                _resolvers_messages_resolver__WEBPACK_IMPORTED_MODULE_42__["MessagesResolver"],
+                _services_admin_service__WEBPACK_IMPORTED_MODULE_48__["AdminService"]
             ],
             entryComponents: [
-                _admin_roles_modal_roles_modal_component__WEBPACK_IMPORTED_MODULE_47__["RolesModalComponent"]
+                _admin_roles_modal_roles_modal_component__WEBPACK_IMPORTED_MODULE_49__["RolesModalComponent"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]]
         })
@@ -3379,7 +3575,7 @@ module.exports = ".img-thumbnail {\r\n  margin: 25px;\r\n  width: 85%;\r\n  heig
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  student-edit works!\n</p>\n"
+module.exports = "<p>\n  student-edit works!\n</p>\n\n"
 
 /***/ }),
 
@@ -3415,7 +3611,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var StudentEditComponent = /** @class */ (function () {
-    function StudentEditComponent(route, alertify, studentService, authService) {
+    function StudentEditComponent(router, route, alertify, studentService, authService) {
+        this.router = router;
         this.route = route;
         this.alertify = alertify;
         this.studentService = studentService;
@@ -3432,12 +3629,41 @@ var StudentEditComponent = /** @class */ (function () {
             _this.student = data['student'];
         });
         this.authService.currentPhotoUrl.subscribe(function (photoUrl) { return _this.photoUrl = photoUrl; });
+        this.getCities();
     };
-    StudentEditComponent.prototype.updateStudent = function () {
+    StudentEditComponent.prototype.getCities = function () {
         var _this = this;
-        this.studentService.updateStudent(this.authService.decodedToken.nameid, this.student).subscribe(function (next) {
-            _this.alertify.success('Profile updated successfully');
-            _this.editForm.reset(_this.student);
+        this.studentService.getCities().subscribe(function (cities) { return _this.cities = cities; });
+    };
+    StudentEditComponent.prototype.submit = function () {
+        var _this = this;
+        if (this.student.id) {
+            this.studentService.updateStudent(this.student).subscribe(function (next) {
+                _this.alertify.success('Profile updated successfully');
+                _this.editForm.reset(_this.student);
+            }, function (error) {
+                _this.alertify.error(error);
+            });
+        }
+        else {
+            this.studentService.insertStudent(this.student).subscribe(function (next) {
+                _this.alertify.success('Profile updated successfully');
+                _this.editForm.reset(_this.student);
+            }, function (error) {
+                _this.alertify.error(error);
+            });
+        }
+    };
+    StudentEditComponent.prototype.cancel = function (event) {
+        event.preventDefault();
+        this.router.navigate(['/']);
+    };
+    StudentEditComponent.prototype.delete = function (event) {
+        var _this = this;
+        event.preventDefault();
+        this.studentService.deleteStudent(this.student).subscribe(function (next) {
+            _this.alertify.success('Profile Deleted successfully');
+            _this.router.navigate(['/students']);
         }, function (error) {
             _this.alertify.error(error);
         });
@@ -3458,10 +3684,76 @@ var StudentEditComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./student-edit.component.html */ "./src/app/students/student-edit/student-edit.component.html"),
             styles: [__webpack_require__(/*! ./student-edit.component.css */ "./src/app/students/student-edit/student-edit.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _services_alertify_service__WEBPACK_IMPORTED_MODULE_2__["AlertifyService"],
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _services_alertify_service__WEBPACK_IMPORTED_MODULE_2__["AlertifyService"],
             _services_student_service__WEBPACK_IMPORTED_MODULE_4__["StudentService"], _services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"]])
     ], StudentEditComponent);
     return StudentEditComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/students/student-list/student-grid.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/students/student-list/student-grid.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <div class=\"row grid-container\">\r\n      <div class=\"col-md-10\">\r\n          <div class=\"table\">\r\n              <table class=\"table table-striped table-hover\">\r\n                  <thead>\r\n                      <tr>\r\n                          <th>&nbsp;</th>\r\n                          <th (click)=\"sort('firstName')\">First Name</th>\r\n                          <th (click)=\"sort('lastName')\">Last Name</th>\r\n                          <th (click)=\"sort('dateOfBirth')\">Date of Birth</th>\r\n                          <th (click)=\"sort('currentCity')\">City</th>\r\n                          <th (click)=\"sort('fatherName')\">Father Name</th>\r\n                          <th (click)=\"sort('gender')\">Gender</th>\r\n                      </tr>\r\n                  </thead>\r\n                  <tbody>\r\n                      <tr *ngFor=\"let student of students;\">\r\n                        <td style=\"text-align:center; vertical-align:middle\">\r\n                          <img src=\"../../assets/images/{{ student.gender | lowercase }}.png\"\r\n                          height=\"42\" width=\"42\" alt=\"Student Image\" /></td>\r\n                          <td><a [routerLink]=\"['/students',student.id]\">{{ student.firstName | capitalize }}</a></td>\r\n                          <td>{{ student.firstName | capitalize }}</td>\r\n                          <td>{{ student.dateOfBirth }}</td>\r\n                          <td>{{ student.currentCity | trim }}</td>\r\n                          <td>{{ student.fatherName }}</td>\r\n                          <td>{{ student.gender }}</td>\r\n                      </tr>\r\n<!--                       <tr *ngIf=\"!student.length\">\r\n                          <td>&nbsp;</td>\r\n                          <td colspan=\"6\">No Records Found</td>\r\n                      </tr> -->\r\n                  </tbody>\r\n              </table>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/students/student-list/student-grid.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/students/student-list/student-grid.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: StudentGridComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentGridComponent", function() { return StudentGridComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_sorter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_services/sorter */ "./src/app/_services/sorter.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var StudentGridComponent = /** @class */ (function () {
+    function StudentGridComponent(sorter) {
+        this.sorter = sorter;
+        this.students = [];
+    }
+    StudentGridComponent.prototype.ngOnInit = function () {
+    };
+    StudentGridComponent.prototype.sort = function (prop) {
+        this.sorter.sort(this.students, prop);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Array)
+    ], StudentGridComponent.prototype, "students", void 0);
+    StudentGridComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-student-grid',
+            template: __webpack_require__(/*! ./student-grid.component.html */ "./src/app/students/student-list/student-grid.component.html"),
+            // When using OnPush detectors, then the framework will check an OnPush
+            // component when any of its input properties changes, when it fires
+            // an event, or when an observable fires an event ~ Victor Savkin (Angular Team)
+            changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush
+        }),
+        __metadata("design:paramtypes", [_services_sorter__WEBPACK_IMPORTED_MODULE_1__["Sorter"]])
+    ], StudentGridComponent);
+    return StudentGridComponent;
 }());
 
 
@@ -3486,7 +3778,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  student-list works!\n</p>\n\n<div class=\"text-center mt-3\">\n  <h2>All Students - {{pagination.totalItems}} found</h2>\n</div>\n\n<div class=\"container mt-3\">\n\n  <form class=\"form-inline\" #form=\"ngForm\" (ngSubmit)=\"loadStudents()\" novalidate>\n\n      <div class=\"form-group px-2\">\n        <label for=\"gender\">Show: </label>\n        <select class=\"form-control ml-1\" style=\"width: 130px\" id=\"gender\"\n          [(ngModel)]=\"studentParams.gender\" name=\"gender\">\n          <option *ngFor=\"let gender of genderList\" [value]=\"gender.value\">\n            {{gender.display}}\n          </option>\n        </select>\n      </div>\n      <button type=\"submit\" class=\"btn btn-primary\" style=\"margin-left:10px\">Apply Filters</button>\n      <button type=\"button\" class=\"btn btn-info\" (click)=\"resetFilters()\" style=\"margin-left:10px\">\n          Reset Filter\n      </button>\n\n\n    </form>\n    <br>\n\n\n<!-- <div class=\"row\">\n  <div *ngFor=\"let student of students\" class=\"col-lg-2 col-md-3 col-sm-6\">\n     <app-student-card [student]=\"student\"></app-student-card>\n  </div>\n</div>\n -->\n<div class=\"container\">\n    <div class=\"row grid-container\">\n        <div class=\"col-md-10\">\n            <div class=\"table\">\n                <table class=\"table table-striped table-hover\">\n                    <thead>\n                        <tr>\n                            <th>&nbsp;</th>\n                            <th (click)=\"sort('firstName')\">First Name</th>\n                            <th (click)=\"sort('lastName')\">Last Name</th>\n                            <th (click)=\"sort('dateOfBirth')\">Date of Birth</th>\n                            <th (click)=\"sort('currentCity')\">City</th>\n                            <th (click)=\"sort('fatherName')\">Father Name</th>\n                            <th (click)=\"sort('gender')\">Gender</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n                        <tr *ngFor=\"let student of students;\">\n                          <td style=\"text-align:center; vertical-align:middle\">\n                            <img src=\"../../assets/images/{{ student.gender | lowercase }}.png\"\n                            height=\"42\" width=\"42\" alt=\"Student Image\" /></td>\n                            <td><a [routerLink]=\"['/students',student.id]\">{{ student.firstName | capitalize }}</a></td>\n                            <td>{{ student.firstName | capitalize }}</td>\n                            <td>{{ student.dateOfBirth }}</td>\n                            <td>{{ student.currentCity | trim }}</td>\n                            <td>{{ student.fatherName }}</td>\n                            <td>{{ student.gender }}</td>\n                        </tr>\n<!--                         <tr *ngIf=\"!student.length\">\n                            <td>&nbsp;</td>\n                            <td colspan=\"6\">No Records Found</td>\n                        </tr> -->\n                    </tbody>\n                </table>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n<!--\n<h4>All Members</h4>\n<hr>\n\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <div class=\"mat-elevation-z8\">\n      <mat-table [dataSource]=\"dataSource\" matSort class=\"mat-elevation-z8\">\n\n          <ng-container matColumnDef=\"id\">\n              <th mat-header-cell *matHeaderCellDef mat-sort-header> Student Id </th>\n              <td mat-cell *matCellDef=\"let student\"> {{student.id}} </td>\n          </ng-container>\n          <ng-container matColumnDef=\"cfssn\">\n              <th mat-header-cell *matHeaderCellDef mat-sort-header> CF SSN </th>\n              <td mat-cell *matCellDef=\"let student\"> {{student.cfssn}} </td>\n          </ng-container>\n          <ng-container matColumnDef=\"firstName\">\n              <th mat-header-cell *matHeaderCellDef mat-sort-header> First Name </th>\n              <td mat-cell *matCellDef=\"let student\"> {{student.firstName}} </td>\n          </ng-container>\n\n          <ng-container matColumnDef=\"lastName\">\n              <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Name </th>\n              <td mat-cell *matCellDef=\"let student\"> {{student.lastName}} </td>\n          </ng-container>\n\n          <ng-container matColumnDef=\"gender\">\n              <th mat-header-cell *matHeaderCellDef mat-sort-header> Gender </th>\n              <td mat-cell *matCellDef=\"let student\"> {{student.gender}} </td>\n          </ng-container>\n\n          <ng-container matColumnDef=\"dateOfBirth\">\n              <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Of Birth </th>\n              <td mat-cell *matCellDef=\"let student\"> {{student.dateOfBirth | date:'dd-MM-yyyy'}} </td>\n          </ng-container>\n\n          <ng-container matColumnDef=\"EditAction\">\n              <th mat-header-cell *matHeaderCellDef> EditAction </th>\n              <td mat-cell *matCellDef=\"let student\"> <a class=\"btn btn-info\" [routerLink]=\"['/student/Edit/',student.id]\"><i\n                          class=\"fa fa-edit fa-fw\"></i>\n                      Edit</a> </td>\n          </ng-container> -->\n\n<!--           <ng-container matColumnDef=\"DeleteAction\">\n              <th mat-header-cell *matHeaderCellDef> DeleteAction </th>\n              <td mat-cell *matCellDef=\"let student\" (click)=\"$event.stopPropagation()\">\n                  <button mat-button (click)=\"Delete(student.id)\"  class=\"btn btn-danger\">Delete</button>\n              </td>\n          </ng-container>\n-->\n <!--          <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n          <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n      </mat-table>\n    </div>\n  </div> -->\n\n\n</div>\n\n<div class=\"d-flex justify-content-center\">\n<pagination\n    [boundaryLinks]=\"true\"\n    [totalItems]=\"pagination.totalItems\"\n    [(ngModel)]=\"pagination.currentPage\"\n    [itemsPerPage]=\"pagination.itemsPerPage\"\n    (pageChanged)=\"pageChanged($event)\"\n  previousText=\"&lsaquo;\" nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\">\n\n</pagination>\n</div>\n"
+module.exports = "<p>\n  student-list works!\n</p>\n\n<div class=\"text-center mt-3\">\n  <h2>All Students - {{pagination.totalItems}} found</h2>\n</div>\n\n<div class=\"container mt-3\">\n\n  <form class=\"form-inline\" #form=\"ngForm\" (ngSubmit)=\"loadStudents()\" novalidate>\n\n      <div class=\"form-group px-2\">\n        <label for=\"gender\">Show: </label>\n        <select class=\"form-control ml-1\" style=\"width: 130px\" id=\"gender\"\n          [(ngModel)]=\"studentParams.gender\" name=\"gender\">\n          <option *ngFor=\"let gender of genderList\" [value]=\"gender.value\">\n            {{gender.display}}\n          </option>\n        </select>\n      </div>\n      <button type=\"submit\" class=\"btn btn-primary\" style=\"margin-left:10px\">Apply Filters</button>\n      <button type=\"button\" class=\"btn btn-info\" (click)=\"resetFilters()\" style=\"margin-left:10px\">\n          Reset Filter\n      </button>\n\n\n    </form>\n    <br>\n\n\n<!-- <div class=\"row\">\n  <div *ngFor=\"let student of students\" class=\"col-lg-2 col-md-3 col-sm-6\">\n     <app-student-card [student]=\"student\"></app-student-card>\n  </div>\n</div>\n -->\n\n  <div class=\"container\">\n      <header>\n          <h3>\n              <span class=\"glyphicon glyphicon-user\"></span>\n              {{pagination.totalItems}}\n          </h3>\n      </header>\n      <br />\n      <div class=\"row\">\n          <div class=\"col-md-8\">\n              <div class=\"navbar\">\n                  <filter-textbox (changed)=\"filterChanged($event)\"></filter-textbox>\n              </div>\n          </div>\n          <div class=\"col-md-4\">\n              <a class=\"btn btn-default\" [routerLink]=\"['/students', '0']\">Add New Student</a>\n          </div>\n      </div>\n\n      <app-student-grid [students]=\"filteredStudents\"></app-student-grid>\n\n\n    </div>\n</div>\n\n<div class=\"d-flex justify-content-center\">\n<pagination\n    [boundaryLinks]=\"true\"\n    [totalItems]=\"pagination.totalItems\"\n    [(ngModel)]=\"pagination.currentPage\"\n    [itemsPerPage]=\"pagination.itemsPerPage\"\n    (pageChanged)=\"pageChanged($event)\"\n  previousText=\"&lsaquo;\" nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\">\n\n</pagination>\n</div>\n"
 
 /***/ }),
 
@@ -3504,6 +3796,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_services/student.service */ "./src/app/_services/student.service.ts");
 /* harmony import */ var _services_alertify_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_services/alertify.service */ "./src/app/_services/alertify.service.ts");
 /* harmony import */ var _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/@angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_data_filter_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_services/data-filter.service */ "./src/app/_services/data-filter.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3517,19 +3810,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var StudentListComponent = /** @class */ (function () {
-    function StudentListComponent(studentService, alertify, route) {
+    function StudentListComponent(studentService, alertify, route, dataFilter) {
         this.studentService = studentService;
         this.alertify = alertify;
         this.route = route;
+        this.dataFilter = dataFilter;
         this.student = JSON.parse(localStorage.getItem('student'));
         this.genderList = [{ value: 'male', display: 'Males' }, { value: 'female', display: 'Females' }];
         this.studentParams = {};
+        this.filteredStudents = [];
     }
     StudentListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.data.subscribe(function (data) {
-            _this.students = data['students'].result;
+            _this.students = _this.filteredStudents = data['students'].result;
             _this.pagination = data['students'].pagination;
         });
         // this.studentParams.gender =  'male';
@@ -3543,18 +3839,24 @@ var StudentListComponent = /** @class */ (function () {
         // this.studentParams.gender = 'male';
         this.loadStudents();
     };
+    StudentListComponent.prototype.filterChanged = function (filterText) {
+        if (filterText && this.students) {
+            var props = ['firstName', 'lastName', 'dateOfBirth', 'currentCity', 'fatherName', 'gender'];
+            this.filteredStudents = this.dataFilter.filter(this.students, props, filterText);
+        }
+        else {
+            this.filteredStudents = this.students;
+        }
+    };
     StudentListComponent.prototype.loadStudents = function () {
         var _this = this;
         this.studentService.getStudents(this.pagination.currentPage, this.pagination.itemsPerPage, this.studentParams)
             .subscribe(function (res) {
-            _this.students = res.result;
+            _this.students = _this.filteredStudents = res.result;
             _this.pagination = res.pagination;
         }, function (error) {
             _this.alertify.error(error);
         });
-    };
-    StudentListComponent.prototype.sort = function (prop) {
-        this.sorter.sort(this.students, prop);
     };
     StudentListComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -3563,7 +3865,7 @@ var StudentListComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./student-list.component.css */ "./src/app/students/student-list/student-list.component.css")]
         }),
         __metadata("design:paramtypes", [_services_student_service__WEBPACK_IMPORTED_MODULE_1__["StudentService"], _services_alertify_service__WEBPACK_IMPORTED_MODULE_2__["AlertifyService"],
-            _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+            _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _services_data_filter_service__WEBPACK_IMPORTED_MODULE_4__["DataFilterService"]])
     ], StudentListComponent);
     return StudentListComponent;
 }());

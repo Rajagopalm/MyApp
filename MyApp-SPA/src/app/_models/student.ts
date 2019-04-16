@@ -1,3 +1,4 @@
+import { City } from './city';
 import { StudentEnrollments } from './studentenrollments';
 
 export interface Student {
@@ -18,6 +19,7 @@ export interface Student {
   currentAddress: string;
   currentCity: string;
   currentCityId: number;
+  city?: City;
   currentDistrict: string;
   currentDistrictId: number;
   pinCode: string;

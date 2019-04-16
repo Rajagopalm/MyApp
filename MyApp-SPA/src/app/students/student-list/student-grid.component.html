@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row grid-container">
+      <div class="col-md-10">
+          <div class="table">
+              <table class="table table-striped table-hover">
+                  <thead>
+                      <tr>
+                          <th>&nbsp;</th>
+                          <th (click)="sort('firstName')">First Name</th>
+                          <th (click)="sort('lastName')">Last Name</th>
+                          <th (click)="sort('dateOfBirth')">Date of Birth</th>
+                          <th (click)="sort('currentCity')">City</th>
+                          <th (click)="sort('fatherName')">Father Name</th>
+                          <th (click)="sort('gender')">Gender</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let student of students;">
+                        <td style="text-align:center; vertical-align:middle">
+                          <img src="../../assets/images/{{ student.gender | lowercase }}.png"
+                          height="42" width="42" alt="Student Image" /></td>
+                          <td><a [routerLink]="['/students',student.id]">{{ student.firstName | capitalize }}</a></td>
+                          <td>{{ student.firstName | capitalize }}</td>
+                          <td>{{ student.dateOfBirth }}</td>
+                          <td>{{ student.currentCity | trim }}</td>
+                          <td>{{ student.fatherName }}</td>
+                          <td>{{ student.gender }}</td>
+                      </tr>
+<!--                       <tr *ngIf="!student.length">
+                          <td>&nbsp;</td>
+                          <td colspan="6">No Records Found</td>
+                      </tr> -->
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>

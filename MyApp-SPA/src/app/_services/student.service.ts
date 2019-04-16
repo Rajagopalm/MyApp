@@ -1,10 +1,13 @@
+import { City } from './../_models/city';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Student } from '../_models/student';
 import { PaginatedResult } from '../_models/pagination';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, catchError } from 'rxjs/operators';
+import { IStudentResponse } from '../_models/IStudentResponse';
+
 
 @Injectable({
   providedIn: 'root'
@@ -48,8 +51,39 @@ export class StudentService {
     return this.http.get<Student>(this.baseUrl + 'students/' + id);
   }
 
-  updateStudent(id: number, student: Student) {
-    return this.http.put(this.baseUrl + 'students/' + id, student);
+  updateStudent(student: Student) {
+    return this.http.put(this.baseUrl + 'students/' + student.id, student);
   }
+
+  insertStudent(student: Student) {
+    return this.http.post<IStudentResponse>(this.baseUrl + 'students/', student)
+    .pipe(
+         map((data) => {
+             console.log('insertStudent status: ' + data.status);
+             return data.student;
+         }),
+         catchError(this.handleError)
+     );
+  }
+
+  deleteStudent(student: Student): Observable<boolean> {
+    return this.http.delete<boolean>(this.baseUrl + '/' + student.id)
+               .pipe(catchError(this.handleError));
+}
+
+  getCities(): Observable<City[]> {
+        return this.http.get<City[]>(this.baseUrl + 'subdistricts/');
+  }
+
+  private handleError(error: HttpErrorResponse) {
+    console.error('server error:', error);
+    if (error.error instanceof Error) {
+      let errMessage = error.error.message;
+      return Observable.throw(errMessage);
+      // Use the following instead if using lite-server
+      // return Observable.throw(err.text() || 'backend server error');
+    }
+    return Observable.throw(error || 'ASP.NET Core server error');
+}
 
 }
