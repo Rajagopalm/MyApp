@@ -17,10 +17,10 @@ namespace MyApp.API.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        private readonly IMyRepository _repo;
+        private readonly IMyAppRepository _repo;
         private readonly IMapper _mapper;
 
-        public StudentsController(IMyRepository repo, IMapper mapper)
+        public StudentsController(IMyAppRepository repo, IMapper mapper)
         {
             _mapper = mapper;
             _repo = repo;

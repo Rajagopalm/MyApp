@@ -20,6 +20,10 @@ export class StudentEditComponent implements OnInit {
     student: Student;
     cities: City[];
     photoUrl: string;
+    errorMessage: string;
+    deleteMessageEnabled: boolean;
+    operationText = 'Insert';
+
     @HostListener('window:beforeunload', ['$event'])
     unloadNotification($event: any) {
       if (this.editForm.dirty) {
@@ -33,10 +37,11 @@ export class StudentEditComponent implements OnInit {
     ngOnInit() {
       this.route.data.subscribe(data => {
         this.student = data['student'];
+        this.operationText = 'Update';
       });
       this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
 
-      this.getCities();
+      // this.getCities();
     }
 
     getCities() {
@@ -75,6 +80,7 @@ export class StudentEditComponent implements OnInit {
     event.preventDefault();
     this.studentService.deleteStudent(this.student).subscribe(next => {
       this.alertify.success('Profile Deleted successfully');
+      this.errorMessage = 'Profile Deleted successfully';
       this.router.navigate(['/students']);
     }, error => {
       this.alertify.error(error);

@@ -5,7 +5,7 @@ using MyApp.API.Models;
 
 namespace MyApp.API.Data
 {
-    public interface IMyRepository
+    public interface IMyAppRepository
     {
          void Add<T>(T entity) where T: class;
          void Delete<T>(T entity) where T: class;
@@ -20,6 +20,7 @@ namespace MyApp.API.Data
          Task<IEnumerable<Message>> GetMessageThread(int userId, int recipientId);
 
          Task<PagedList<Student>> GetStudents(StudentParams studentParams);
+         Task<List<SubDistrict>> GetSubDistrictsAsync();
          Task<Student> GetStudent(int id);
 
     }

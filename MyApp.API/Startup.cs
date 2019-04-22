@@ -95,7 +95,7 @@ namespace MyApp.API
             services.AddAutoMapper();
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
-            services.AddScoped<IMyRepository, MyRepository>();
+            services.AddScoped<IMyAppRepository, MyAppRepository>();
             services.AddScoped<LogUserActivity>();
         }
 

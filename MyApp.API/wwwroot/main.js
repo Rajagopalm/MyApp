@@ -3575,7 +3575,7 @@ module.exports = ".img-thumbnail {\r\n  margin: 25px;\r\n  width: 85%;\r\n  heig
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  student-edit works!\n</p>\n\n"
+module.exports = "<p>\n  student-edit works!\n</p>\n\n<div>\n  <header>\n      <h3>\n          <span class=\"glyphicon glyphicon-user\"></span>\n          {{ student.firstName }} {{ student.lastName }}\n      </h3>\n  </header>\n  <br />\n  <form (ngSubmit)=\"submit()\" #studentForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"form-group\">\n      <label>First Name</label>\n      <input type=\"text\" class=\"form-control\" name=\"firstName\" [(ngModel)]=\"student.firstName\" #firstName=\"ngModel\" required>\n      <div class=\"alert alert-danger\" [hidden]=\"firstName.untouched || firstName.valid\">First Name is required</div>\n    </div>\n    <div class=\"form-group\">\n      <label>Last Name</label>\n      <input type=\"text\" class=\"form-control\" name=\"lastName\" [(ngModel)]=\"student.lastName\" #lastName=\"ngModel\" required>\n      <div class=\"alert alert-danger\" [hidden]=\"lastName.untouched || lastName.valid\">Last Name is required</div>\n    </div>\n    <div class=\"form-group\">\n      <label>Gender</label>\n      <br />\n      <div class=\"radio\">\n        <label>\n          <input type=\"radio\" name=\"gender\" [(ngModel)]=\"student.gender\" #gender=\"ngModel\" value=\"Male\" required />\n          Male\n        </label>\n      </div>\n      <div class=\"radio\">\n        <label>\n          <input type=\"radio\" name=\"gender\" [(ngModel)]=\"student.gender\" #gender=\"ngModel\" value=\"Female\" required />\n          Female\n        </label>\n      </div>\n    </div>\n    <div class=\"form-group\">\n      <label>Email</label>\n      <input type=\"email\" class=\"form-control\" name=\"emailId\" [(ngModel)]=\"student.emailId\" #email=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" />\n      <div class=\"alert alert-danger\" >Email is required and must be valid</div>\n    </div>\n    <div class=\"form-group\">\n      <label>Address</label>\n      <input type=\"text\" class=\"form-control\" name=\"currentAddress\" [(ngModel)]=\"student.currentAddress\" #address=\"ngModel\" required>\n      <div class=\"alert alert-danger\" >Address is required</div>\n    </div>\n    <div class=\"form-group\">\n      <label>City</label>\n      <input type=\"text\" class=\"form-control\" name=\"currentCity\" [(ngModel)]=\"student.currentCity\" #city=\"ngModel\" required>\n      <div class=\"alert alert-danger\" >City is required</div>\n    </div>\n   <!--  <div class=\"form-group\">\n      <label>State</label>\n      <select class=\"form-control\"\n              [(ngModel)]=\"student.currentCityId\"\n              name=\"state\"\n              required>\n          <option *ngFor=\"let state of states\" [ngValue]=\"state.id\">{{state.name}}</option>\n      </select>\n    </div> -->\n    <br />\n\n    <div *ngIf=\"student\">\n      <div class=\"alert alert-warning\" *ngIf=\"student.id\">\n         Delete Student?&nbsp;&nbsp;<button class=\"btn btn-danger\" (click)=\"delete($event)\">Yes</button>&nbsp;&nbsp;\n         <button class=\"btn btn-default\" (click)=\"deleteMessageEnabled = false\">No</button>\n      </div>\n      <button class=\"btn btn-danger\" *ngIf=\"student.id && !deleteMessageEnabled\" (click)=\"deleteMessageEnabled = true\">Delete</button>&nbsp;&nbsp;\n\n      <div class=\"pull-right\" *ngIf=\"!deleteMessageEnabled\">\n        <button class=\"btn btn-default\" (click)=\"cancel($event)\">Cancel</button>&nbsp;&nbsp;\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!studentForm.valid\">{{ operationText }}</button>\n      </div>\n    </div>\n    <br />\n    <br />\n    <div class=\"alert alert-danger\" *ngIf=\"errorMessage != null\">{{ errorMessage }}</div>\n\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -3617,6 +3617,7 @@ var StudentEditComponent = /** @class */ (function () {
         this.alertify = alertify;
         this.studentService = studentService;
         this.authService = authService;
+        this.operationText = 'Insert';
     }
     StudentEditComponent.prototype.unloadNotification = function ($event) {
         if (this.editForm.dirty) {
@@ -3627,6 +3628,7 @@ var StudentEditComponent = /** @class */ (function () {
         var _this = this;
         this.route.data.subscribe(function (data) {
             _this.student = data['student'];
+            _this.operationText = 'Update';
         });
         this.authService.currentPhotoUrl.subscribe(function (photoUrl) { return _this.photoUrl = photoUrl; });
         this.getCities();
@@ -3663,6 +3665,7 @@ var StudentEditComponent = /** @class */ (function () {
         event.preventDefault();
         this.studentService.deleteStudent(this.student).subscribe(function (next) {
             _this.alertify.success('Profile Deleted successfully');
+            _this.errorMessage = 'Profile Deleted successfully';
             _this.router.navigate(['/students']);
         }, function (error) {
             _this.alertify.error(error);

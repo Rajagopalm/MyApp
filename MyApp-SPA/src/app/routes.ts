@@ -38,7 +38,7 @@ export const appRoutes: Routes = [
                 resolve: {students: StudentListResolver}},
             {path: 'students/:id', component: StudentDetailComponent,
                 resolve: {student: StudentDetailResolver}},
-            {path: 'student/edit', component: StudentEditComponent,
+            {path: 'student/edit/:id', component: StudentEditComponent,
                 resolve: {student: StudentEditResolver}, canDeactivate: [PreventUnsavedChanges]},
             {path: 'messages', component: MessagesComponent, resolve: {messages: MessagesResolver}},
             {path: 'lists', component: ListsComponent, resolve: {users: ListsResolver}},

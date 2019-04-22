@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MyApp.API.Data
 {
-    public class MyRepository : IMyRepository
+    public class MyAppRepository : IMyAppRepository
     {
         private readonly DataContext _context;
-        public MyRepository(DataContext context)
+        public MyAppRepository(DataContext context)
         {
             _context = context;
         }
@@ -212,5 +212,11 @@ namespace MyApp.API.Data
            
             return await PagedList<Student>.CreateAsync(students, studentParams.PageNumber, studentParams.PageSize);
         }
+
+        public async Task<List<SubDistrict>> GetSubDistrictsAsync()
+        {
+            return await _context.SubDistricts.OrderBy(s => s.Name).ToListAsync();
+        }
+
     }
 }
