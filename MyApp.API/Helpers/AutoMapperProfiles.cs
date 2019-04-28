@@ -49,6 +49,7 @@ namespace MyApp.API.Helpers
                     opts => opts.MapFrom(
                         src => src.College.Name
                     )).ReverseMap();
+            CreateMap<SubDistrict, SubDistrictsForListDto>();
         }
     }
 }

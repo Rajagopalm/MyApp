@@ -41,7 +41,7 @@ export class StudentEditComponent implements OnInit {
       });
       this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
 
-      // this.getCities();
+      this.getCities();
     }
 
     getCities() {
