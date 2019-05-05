@@ -7,6 +7,7 @@ import { Pagination, PaginatedResult } from '../../_models/pagination';
 import { Sorter } from './../../_services/sorter';
 import { CapitalizePipe } from './../../_shared/pipes/capitalize.pipe';
 import { DataFilterService } from '../../_services/data-filter.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-student-list',
@@ -22,7 +23,7 @@ export class StudentListComponent implements OnInit {
   filteredStudents: Student[] = [];
 
   constructor(private studentService: StudentService, private alertify: AlertifyService,
-    private route: ActivatedRoute, private dataFilter: DataFilterService) { }
+    private route: ActivatedRoute, private router: Router, private dataFilter: DataFilterService) { }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
@@ -45,6 +46,7 @@ export class StudentListComponent implements OnInit {
     this.loadStudents();
   }
 
+
   filterChanged(filterText: string) {
     if (filterText && this.students) {
         let props = ['firstName', 'lastName', 'dateOfBirth', 'currentCity', 'fatherName', 'gender'];
@@ -62,6 +64,10 @@ export class StudentListComponent implements OnInit {
     }, error => {
       this.alertify.error(error);
     });
+  }
+
+  addNewStudent(studentID: number) {
+    this.router.navigate(['/student/edit/' + studentID]);
   }
 
 }

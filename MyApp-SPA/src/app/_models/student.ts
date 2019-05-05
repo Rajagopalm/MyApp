@@ -30,7 +30,10 @@ export interface Student {
   placeOfBirth: string;
   stateOfBirth: string;
   countryOfBirth: string;
+  disability:  boolean;
   disabilityType: string;
+  isAllSemSupport:  boolean;
+  prevCfssn: string;
 
   studentEnrollments?: StudentEnrollments[];
 }

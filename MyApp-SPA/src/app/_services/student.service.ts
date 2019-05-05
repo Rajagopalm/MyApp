@@ -13,9 +13,6 @@ import { IStudentResponse } from '../_models/IStudentResponse';
   providedIn: 'root'
 })
 export class StudentService {
-
-
-
   baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
@@ -71,14 +68,10 @@ export class StudentService {
                .pipe(catchError(this.handleError));
 }
 
-  getCities(): Observable<City[]> {
-        return this.http.get<City[]>(this.baseUrl + 'subdistricts/');
-  }
-
   private handleError(error: HttpErrorResponse) {
     console.error('server error:', error);
     if (error.error instanceof Error) {
-      let errMessage = error.error.message;
+      const errMessage = error.error.message;
       return Observable.throw(errMessage);
       // Use the following instead if using lite-server
       // return Observable.throw(err.text() || 'backend server error');

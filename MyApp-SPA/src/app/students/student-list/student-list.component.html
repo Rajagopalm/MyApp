@@ -50,8 +50,9 @@
                   <filter-textbox (changed)="filterChanged($event)"></filter-textbox>
               </div>
           </div>
-          <div class="col-md-4">
-              <a class="btn btn-default" [routerLink]="['/students', '0']">Add New Student</a>
+          <div class="navbar">
+              <!-- <a class="btn btn-default" [routerLink]="['/student/edit', '0']">Add New Student</a> -->
+              <a class="btn btn-sm btn-info text-white" (click)="addNewStudent(0)"><i class="fa fa-plus"> Add New Student </i></a>
           </div>
       </div>
 

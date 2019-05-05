@@ -1,3 +1,4 @@
+import { CityService } from './_services/city.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -114,6 +115,8 @@ export function tokenGetter() {
       Sorter,
       AuthGuard,
       UserService,
+      StudentService,
+      CityService,
       MemberDetailResolver,
       MemberListResolver,
       MemberEditResolver,

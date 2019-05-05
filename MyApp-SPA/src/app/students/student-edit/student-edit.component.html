@@ -1,73 +1,230 @@
-<p>
-  student-edit works!
-</p>
-<div class="container mt-4">
-  <div class="row">
-    <h1>{{student.firstName}}'s Profile</h1>
-  </div>
-  <div class="row">
-      <div>
-        <header>
-            <h3>
-                <span class="glyphicon glyphicon-user"></span>
-                {{ student.firstName }} {{ student.lastName }}
-            </h3>
-        </header>
-        <br />
-        <form (ngSubmit)="submit()" #studentForm="ngForm" class="editForm" novalidate>
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" class="form-control" name="firstName" [(ngModel)]="student.firstName" #firstName="ngModel" required>
-            <div class="alert alert-danger" [hidden]="firstName.untouched || firstName.valid">First Name is required</div>
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" class="form-control" name="lastName" [(ngModel)]="student.lastName" #lastName="ngModel" required>
-            <div class="alert alert-danger" [hidden]="lastName.untouched || lastName.valid">Last Name is required</div>
-          </div>
-          <div class="form-group">
-            <label>Gender</label>
-            <br />
-            <div class="radio">
-              <label>
-                <input type="radio" name="gender" [(ngModel)]="student.gender" #gender="ngModel" value="Male" required />
-                Male
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="gender" [(ngModel)]="student.gender" #gender="ngModel" value="Female" required />
-                Female
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" name="emailId" [(ngModel)]="student.emailId" #email="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" />
-            <div class="alert alert-danger" [hidden]="email.untouched || email.valid">Email is required and must be valid</div>
-          </div>
-          <div class="form-group">
-            <label>Address</label>
-            <input type="text" class="form-control" name="currentAddress" [(ngModel)]="student.currentAddress" #address="ngModel" required>
-            <div class="alert alert-danger" [hidden]="address.untouched || address.valid">Address is required</div>
-          </div>
-          <!-- <div class="form-group">
-            <label>City</label>
-            <input type="text" class="form-control" name="currentCity" [(ngModel)]="student.currentCity" #city="ngModel" required>
-            <div class="alert alert-danger" [hidden]="city.untouched || city.valid">City is required</div>
-          </div> -->
-          <div class="form-group">
-            <label>City</label>
-            <select class="form-control"
-                    [(ngModel)]="student.currentCityId"
-                    name="currentCity"
-                    required>
-                <option *ngFor="let city of cities" [ngValue]="city.id">{{city.name}}</option>
-            </select>
-          </div>
-          <br />
+<link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+<div class="container">
+     <div class="py-5">
+       <!-- <img class="d-block mx-auto mb-4" src="" alt="" width="72" height="72"> -->
+      <h2>Student Profile Details</h2>
+      <!-- <p class="lead">Student's Form</p> -->
+    </div>
 
-          <div *ngIf="student">
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <!-- <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">-$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul> -->
+
+        <!-- <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </div>
+        </form> -->
+      </div>
+
+      <div class="col-md-8 order-md-1">
+        <!-- <h4 class="mb-3">Student Basic Details</h4>
+        <hr class="mb-4"> -->
+        <form #editForm="ngForm" id="editForm" (ngSubmit)="submit()">
+          <input type="hidden"  name="id" #id="ngModel" [(ngModel)]="student.id">
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <label>First Name</label>
+                <input id="firstName" type="text" class="form-control" placeholder="First Name" name="firstName" [(ngModel)]="student.firstName" #firstName="ngModel" required>
+                <div class="alert alert-danger" [hidden]="firstName.untouched || firstName.valid">First Name is required</div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Last Name</label>
+                <input id="lastName" type="text" class="form-control" placeholder="Last Name" name="lastName" [(ngModel)]="student.lastName" #lastName="ngModel" required>
+                <div class="alert alert-danger" [hidden]="lastName.untouched || lastName.valid">Last Name is required</div>
+            </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-md-6 mb-3">
+                <label>Gender</label>
+                <div class="custom-control custom-radio">
+                  <input id="male" class="custom-control-input" type="radio" name="gender" [(ngModel)]="student.gender" #gender="ngModel" value="Male" required />
+                  <label class="custom-control-label" for="male">Male</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="female" class="custom-control-input" type="radio" name="gender" [(ngModel)]="student.gender" #gender="ngModel" value="Female" required />
+                  <label class="custom-control-label" for="female">Female</label>
+                </div>
+            </div>
+            <!-- <div class="col-md-6 mb-3">
+                <label>Date of Birth</label>
+                <input id="dateOfBirth" type="text" class="form-control" placeholder="Date of Birth" name="dateOfBirth" [(ngModel)]="student.dateOfBirth" #dateOfBirth="ngModel">
+                <div class="alert alert-danger" [hidden]="dateOfBirth.untouched || dateOfBirth.valid">Date Of Birth is required</div>
+            </div> -->
+
+            <div class="col-md-6 mb-3">
+                <label>Date of Birth</label>
+                <input id="dateOfBirth" [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }" onkeypress="return false;" class="form-control" placeholder="Date of Birth" name="dateOfBirth" [(ngModel)]="student.dateOfBirth" #dateOfBirth="ngModel" #refdateOfBirth="bsDatepicker" bsDatepicker>
+                <!-- <div class="alert alert-danger" [hidden]="dateOfBirth.untouched || dateOfBirth.valid">Date Of Birth is required</div> -->
+            </div>            
+          </div>
+
+          
+          <div class="row">
+              <div class="col-md-4 mb-3">
+                  <label>First Admission Year</label>
+                  <input id="firstAdmissionYear" type="text" class="form-control" placeholder="First Admission Year" name="firstAdmissionYear" [(ngModel)]="student.firstAdmissionYear" #firstAdmissionYear="ngModel">
+                  <div class="alert alert-danger" [hidden]="firstAdmissionYear.untouched || firstAdmissionYear.valid">Admission Year is required</div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label>CF SSN</label>
+                  <input id="cfssn" type="text" class="form-control" placeholder="Student Serial Number" name="cfssn" [(ngModel)]="student.cfssn" #cfssn="ngModel" readonly>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label>Previous CF SSN</label>
+                  <input id="prevCfssn" type="text" class="form-control" placeholder="NA" name="prevCfssn" [(ngModel)]="student.prevCfssn" #prevCfssn="ngModel" readonly>
+              </div>
+            </div>
+
+
+          <div class="row">
+
+              <div class="col-md-6 mb-3">
+                  <label>Father Name</label>
+                  <input id="fatherName" type="text" class="form-control" placeholder="Father Name" name="fatherName" [(ngModel)]="student.fatherName" #fatherName="ngModel" required>
+                  <div class="alert alert-danger" [hidden]="fatherName.untouched || fatherName.valid">Father Name is required</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                  <label>Blood Group</label>
+                  <input id="bloodGroup" type="text" class="form-control" placeholder="Blood Group" name="bloodGroup" [(ngModel)]="student.bloodGroup" #bloodGroup="ngModel">
+              </div>
+
+          </div>
+
+          <div class="row">
+
+              <div class="col-md-6 mb-3">
+                  <label>Religion</label>
+                  <input id="religion" type="text" class="form-control" placeholder="Religion" name="religion" [(ngModel)]="student.religion" #religion="ngModel">
+              </div>
+              <div class="col-md-6 mb-3">
+                  <label>Caste</label>
+                  <input id="caste" type="text" class="form-control" placeholder="Caste" name="caste" [(ngModel)]="student.caste" #caste="ngModel">
+              </div>
+
+          </div>
+
+          <div class="row">
+
+              <div class="col-md-6 mb-3">
+                  <label>Mother Tongue</label>
+                  <input id="motherTongue" type="text" class="form-control" placeholder="Mother Tongue" name="motherTongue" [(ngModel)]="student.motherTongue" #motherTongue="ngModel">
+              </div>
+              <div class="col-md-6 mb-3">
+                  <label>Nationality</label>
+                  <input id="nationality" type="text" class="form-control" placeholder="Nationality" name="nationality" [(ngModel)]="student.nationality" #nationality="ngModel">
+              </div>
+
+          </div>
+
+          <div class="mb-3">
+              <label>Email</label>
+              <input id="emailId" type="email" class="form-control" placeholder="Email" name="emailId" [(ngModel)]="student.emailId" #emailId="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" />
+              <div class="alert alert-danger" [hidden]="emailId.untouched || emailId.valid">Email is required and must be valid</div>
+          </div>
+          <div class="mb-3">
+              <label>Address</label>
+              <input id="currentAddress" type="text" class="form-control" placeholder="Address" name="currentAddress" [(ngModel)]="student.currentAddress" #currentAddress="ngModel" required>
+              <div class="alert alert-danger" [hidden]="currentAddress.untouched || currentAddress.valid">Address is required</div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-4 mb-3">
+                  <label>Landline</label>
+                  <input id="phoneWithStdCode" type="text" class="form-control"  placeholder="Landline Number" name="phoneWithStdCode" [(ngModel)]="student.phoneWithStdCode" #phoneWithStdCode="ngModel">
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label>Mobile 1</label>
+                  <input id="mobileNumber1" type="text" class="form-control" placeholder="Mobile Number" name="mobileNumber1" [(ngModel)]="student.mobileNumber1" #mobileNumber1="ngModel">
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label>Mobile 2</label>
+                  <input id="mobileNumber2" type="text" class="form-control" placeholder="Mobile Number" name="mobileNumber2" [(ngModel)]="student.mobileNumber2" #mobileNumber2="ngModel">
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="district">Distirct</label>
+              <select class="custom-select d-block w-100" id="district" required>
+                <option value="">Choose...</option>
+                <option>Populate District List from DB</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="city">City</label>
+                <select class="custom-select d-block w-100" id="currentCity"
+                        class="form-control"
+                        [(ngModel)]="student.currentCityId"
+                        name="currentCity"
+                        required>
+                    <option value="">Choose...</option>
+                    <option *ngFor="let city of cityList" [ngValue]="city.id">{{city.name}}</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="pincode">Pincode</label>
+              <input id="pinCode" type="text" class="form-control" name="pinCode" placeholder="Pincode" [(ngModel)]="student.pinCode" #pinCode="ngModel" required>
+              <div class="alert alert-danger" [hidden]="pinCode.untouched || pinCode.valid">Pincode is required</div>
+            </div>
+          </div>
+
+          <h4 class="mb-3">Other Details</h4>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="disability" name="disability" placeholder="disability" [(ngModel)]="student.disability" #disability="ngModel">
+              <label class="custom-control-label" for="disability">Differently Abled</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="isAllSemSupport" name="isAllSemSupport" placeholder="isAllSemSupport" [(ngModel)]="student.isAllSemSupport" #isAllSemSupport="ngModel">
+              <label class="custom-control-label" for="isAllSemSupport">All Semester Scholarship Support</label>
+          </div>
+
+          <hr class="mb-4">
+            <div *ngIf="student">
               <div class="alert alert-warning" *ngIf="student.id && deleteMessageEnabled">
                  Delete Student?&nbsp;&nbsp;<button class="btn btn-danger" (click)="delete($event)">Yes</button>&nbsp;&nbsp;
                  <button class="btn btn-default" (click)="deleteMessageEnabled = false">No</button>
@@ -76,15 +233,24 @@
 
               <div class="pull-right" *ngIf="!deleteMessageEnabled">
                 <button class="btn btn-default" (click)="cancel($event)">Cancel</button>&nbsp;&nbsp;
-                <button type="submit" class="btn btn-success" [disabled]="!studentForm.valid">{{ operationText }}</button>
+                <button type="submit" class="btn btn-success" [disabled]="!editForm.valid">{{ operationText }}</button>
               </div>
-            </div>
+			      </div>
             <br />
             <br />
             <div class="alert alert-danger" *ngIf="errorMessage != null">{{ errorMessage }}</div>
 
-
+          <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> -->
         </form>
       </div>
+    </div>
+
+    <!-- <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2018 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer> -->
   </div>
-</div>

@@ -8,10 +8,12 @@
                           <th>&nbsp;</th>
                           <th (click)="sort('firstName')">First Name</th>
                           <th (click)="sort('lastName')">Last Name</th>
-                          <th (click)="sort('dateOfBirth')">Date of Birth</th>
+                          <th (click)="sort('dateOfBirth')">DOB</th>
                           <th (click)="sort('currentCity')">City</th>
                           <th (click)="sort('fatherName')">Father Name</th>
                           <th (click)="sort('gender')">Gender</th>
+                          <th>&nbsp;</th>
+                          <!-- <th>&nbsp;</th> -->
                       </tr>
                   </thead>
                   <tbody>
@@ -25,11 +27,13 @@
                           <td>{{ student.currentCity | trim }}</td>
                           <td>{{ student.fatherName }}</td>
                           <td>{{ student.gender }}</td>
+                          <td><a class="btn btn-sm btn-info text-white" (click)="openForEdit(student.id)"><i class="fa fa-pencil">  Edit Student</i></a></td>
+                          <!-- <td><a class="btn btn-sm btn-danger text-white ml-1" (click)="onDeleteStudent(student)"><i class="fa fa-trash"></i></a></td> -->
                       </tr>
-<!--                       <tr *ngIf="!student.length">
+                        <tr *ngIf="!students.length">
                           <td>&nbsp;</td>
                           <td colspan="6">No Records Found</td>
-                      </tr> -->
+                      </tr>
                   </tbody>
               </table>
           </div>

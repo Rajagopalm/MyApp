@@ -8,6 +8,7 @@ import { AlertifyService } from '../../_services/alertify.service';
 import { NgForm } from '@angular/forms';
 import { StudentService } from '../../_services/student.service';
 import { AuthService } from '../../_services/auth.service';
+import { CityService } from 'src/app/_services/city.service';
 
 @Component({
   selector: 'app-student-edit',
@@ -17,12 +18,49 @@ import { AuthService } from '../../_services/auth.service';
 
 export class StudentEditComponent implements OnInit {
     @ViewChild('editForm') editForm: NgForm;
-    student: Student;
-    cities: City[];
+    //student: Student;
+    cityList: City[];
     photoUrl: string;
     errorMessage: string;
     deleteMessageEnabled: boolean;
     operationText = 'Insert';
+    // tslint:disable-next-line:no-inferrable-types
+    isValid: boolean = true;
+
+    student: Student = {
+      id: null,
+      cfssn: '',
+      firstName: '',
+      lastName: '',
+      fatherName: '',
+      gender: '',
+      dateOfBirth: '',
+      bloodGroup: '',
+      religion: '',
+      caste: '',
+      motherTongue: '',
+      nationality: '',
+      firstAdmissionYear: 0,
+      emailId: '',
+      currentAddress: '',
+      currentCity: '',
+      currentCityId: 0,
+      currentDistrict: '',
+      currentDistrictId: 0,
+      pinCode: '',
+      phoneWithStdCode: '',
+      profilePicBinary: '',
+      mobileNumber1: '',
+      mobileNumber2: '',
+      placeOfBirth: '',
+      stateOfBirth: '',
+      countryOfBirth: '',
+      disability:  false,
+      disabilityType: '',
+      isAllSemSupport : false,
+      prevCfssn : ''
+    };
+
 
     @HostListener('window:beforeunload', ['$event'])
     unloadNotification($event: any) {
@@ -31,21 +69,41 @@ export class StudentEditComponent implements OnInit {
       }
     }
 
-    constructor(private router: Router, private route: ActivatedRoute, private alertify: AlertifyService,
-      private studentService: StudentService, private authService: AuthService) { }
+    constructor(
+      public studentService: StudentService,
+      private router: Router,
+      public cityService: CityService,
+      private route: ActivatedRoute,
+      private alertify: AlertifyService,
+      private authService: AuthService) { }
 
     ngOnInit() {
-      this.route.data.subscribe(data => {
-        this.student = data['student'];
+      // this.route.data.subscribe(data => {
+      //   this.student = data['student'];
+      //   this.operationText = 'Update';
+      // });
+      // this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
+      //      const studentID = this.route.snapshot.paramMap.get('id');
+      let id = this.route.snapshot.params['id'];
+      if (id !== '0') {
         this.operationText = 'Update';
-      });
-      this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
-
+        this.getStudent(id);
+      }
       this.getCities();
     }
 
+    getStudent(id: string) {
+      this.studentService.getStudent(id)
+        .subscribe((student: Student) => {
+          this.student = student;
+        },
+        (err: any) => {
+          this.alertify.error(err);
+          console.log(err)});
+    }
+
     getCities() {
-      this.studentService.getCities().subscribe((cities: City[]) => this.cities = cities);
+       this.cityService.getCities().subscribe((cityList: City[]) => this.cityList = cityList);
     }
 
     submit() {
@@ -62,7 +120,7 @@ export class StudentEditComponent implements OnInit {
       } else {
 
         this.studentService.insertStudent(this.student).subscribe(next => {
-          this.alertify.success('Profile updated successfully');
+          this.alertify.success('Profile Added successfully');
           this.editForm.reset(this.student);
         }, error => {
           this.alertify.error(error);
