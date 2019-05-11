@@ -1,4 +1,5 @@
 import { City } from '../_models/city';
+import { District } from '../_models/district';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient, HttpParams, HttpResponse, HttpErrorResponse } from '@angular/common/http';
@@ -18,6 +19,10 @@ export class CityService {
 
   getCities(): Observable<City[]> {
         return this.http.get<City[]>(this.baseUrl + 'subdistricts/');
+  }
+
+  getDistricts(): Observable<District[]> {
+    return this.http.get<District[]>(this.baseUrl + 'districts/');
   }
 
 }

@@ -218,5 +218,10 @@ namespace MyApp.API.Data
             return await _context.SubDistricts.OrderBy(s => s.Name).ToListAsync();
         }
 
+        public async Task<List<District>> GetDistrictsAsync()
+        {
+            return await _context.Districts.OrderBy(s => s.Name).ToListAsync();
+        }
+
     }
 }

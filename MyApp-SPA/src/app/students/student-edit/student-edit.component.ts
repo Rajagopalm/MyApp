@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 import { StudentService } from '../../_services/student.service';
 import { AuthService } from '../../_services/auth.service';
 import { CityService } from 'src/app/_services/city.service';
+import { District } from 'src/app/_models/district';
 
 @Component({
   selector: 'app-student-edit',
@@ -20,6 +21,7 @@ export class StudentEditComponent implements OnInit {
     @ViewChild('editForm') editForm: NgForm;
     //student: Student;
     cityList: City[];
+    districtList: District[];
     photoUrl: string;
     errorMessage: string;
     deleteMessageEnabled: boolean;
@@ -89,7 +91,9 @@ export class StudentEditComponent implements OnInit {
         this.operationText = 'Update';
         this.getStudent(id);
       }
+      this.getDistricts();
       this.getCities();
+
     }
 
     getStudent(id: string) {
@@ -104,6 +108,10 @@ export class StudentEditComponent implements OnInit {
 
     getCities() {
        this.cityService.getCities().subscribe((cityList: City[]) => this.cityList = cityList);
+    }
+
+    getDistricts() {
+      this.cityService.getDistricts().subscribe((districtList: District[]) => this.districtList = districtList);
     }
 
     submit() {

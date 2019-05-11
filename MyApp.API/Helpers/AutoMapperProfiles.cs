@@ -51,6 +51,7 @@ namespace MyApp.API.Helpers
                     )).ReverseMap();
             CreateMap<StudentForUpdateDto, Student>();
             CreateMap<SubDistrict, SubDistrictsForListDto>();
+            CreateMap<District, DistrictsForListDto>();
         }
     }
 }
